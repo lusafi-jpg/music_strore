@@ -9,7 +9,7 @@ const Hero = () => {
             {/* Immersive Background Image - Ultra HQ Layer */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/img/belle-jolie-femme-afro-americaine-pull-hiver-ecouter-chanson-romantique_1258-8287.png"
+                    src="/img/hero-woman.png"
                     alt="Background Artist"
                     className="w-full h-full object-cover opacity-50"
                 />
@@ -89,7 +89,7 @@ const Hero = () => {
                         {/* Main Image Frame */}
                         <div className="relative z-10 w-full aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white/10 bg-slate-900">
                             <img
-                                src="/img/belle-jolie-femme-afro-americaine-pull-hiver-ecouter-chanson-romantique_1258-8287.png"
+                                src="/img/hero-woman.png"
                                 alt="Young Artist"
                                 className="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-[2s] opacity-90"
                             />
