@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Music, Instagram, Twitter, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -19,9 +19,9 @@ const Footer = () => {
                             Donnez à votre musique les ailes qu'elle mérite.
                         </p>
                         <div className="flex justify-center sm:justify-start space-x-4">
-                            <SocialIcon icon={<Instagram size={20} />} />
-                            <SocialIcon icon={<Twitter size={20} />} />
-                            <SocialIcon icon={<Youtube size={20} />} />
+                            <SocialIcon icon={<Instagram size={20} />} href="https://www.instagram.com/musik_store_distribution?utm_source=qr&igsh=MWFmdmhvbWsweHVpZg==" />
+                            <SocialIcon icon={<Twitter size={20} />} href="https://x.com/Musik_Store_" />
+                            <SocialIcon icon={<Facebook size={20} />} href="https://www.facebook.com/profile.php?id=61588514274787" />
                         </div>
                     </div>
 
@@ -70,8 +70,8 @@ const Footer = () => {
     );
 };
 
-const SocialIcon = ({ icon }) => (
-    <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-neon-pink hover:text-white transition-all border border-white/5">
+const SocialIcon = ({ icon, href }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-neon-pink hover:text-white transition-all border border-white/5">
         {icon}
     </a>
 );
