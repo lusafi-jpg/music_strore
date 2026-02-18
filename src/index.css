@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0f172a;
+  --color-brand-secondary: #64748b;
+  --color-neon-pink: #f43f5e;
+  --color-neon-purple: #8b5cf6;
+  --color-neon-cyan: #0ea5e9;
+  --font-urban: "Outfit", "Inter", sans-serif;
+
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  --shadow-pro: 0 20px 50px -12px rgba(15, 23, 42, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8fafc] text-slate-900 font-urban antialiased selection:bg-neon-pink selection:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 rounded-2xl font-black uppercase tracking-widest transition-all duration-300 active:scale-95 disabled:opacity-50 flex items-center justify-center space-x-3 bg-slate-900 text-white hover:bg-slate-800 hover:shadow-pro hover:-translate-y-1;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 rounded-2xl font-black uppercase tracking-widest transition-all duration-300 active:scale-95 disabled:opacity-50 flex items-center justify-center space-x-3 bg-white border border-slate-200 text-slate-900 hover:bg-slate-50 hover:border-slate-300;
+  }
+
+  .card-pro {
+    @apply bg-white rounded-[2.5rem] p-10 shadow-soft border border-slate-100 transition-all duration-500 hover:shadow-pro hover:-translate-y-2;
+  }
+}
+
+/* Custom Utilities */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600;
+}
+
+.bg-mesh {
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  background-attachment: fixed;
+}
+
+.glass-pro {
+  @apply bg-white/70 backdrop-blur-2xl border border-white/20 shadow-soft;
+}
