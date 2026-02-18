@@ -4,12 +4,12 @@ import { Users, Play, Globe } from 'lucide-react';
 
 const Stats = () => {
     return (
-        <section className="py-40 bg-white relative z-10 border-y border-slate-50 uppercase">
+        <section className="py-40 bg-dark-bg relative z-10 border-y border-white/5 uppercase">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-20">
-                    <StatItem icon={<Users className="text-neon-pink" size={40} />} label="Artistes" value="1,200+" />
-                    <StatItem icon={<Play className="text-neon-cyan" size={40} />} label="Streams" value="5M+" />
-                    <StatItem icon={<Globe className="text-neon-purple" size={40} />} label="Pays" value="150+" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-20">
+                    <StatItem icon={<Users className="text-neon-pink" size={32} />} label="Artistes" value="1,200+" />
+                    <StatItem icon={<Play className="text-neon-cyan" size={32} />} label="Streams" value="5M+" />
+                    <StatItem icon={<Globe className="text-neon-purple" size={32} />} label="Pays" value="150+" />
                 </div>
             </div>
         </section>
@@ -45,14 +45,14 @@ const StatItem = ({ icon, label, value }) => {
             viewport={{ once: true }}
             className="text-center space-y-8 group"
         >
-            <div className="inline-flex items-center justify-center w-24 h-24 bg-slate-50 rounded-[2rem] mb-4 transition-all duration-500 group-hover:bg-slate-900 group-hover:text-white">
+            <div className="inline-flex items-center justify-center w-24 h-24 bg-white/5 border border-white/10 rounded-[2rem] mb-4 transition-all duration-500 group-hover:bg-white group-hover:text-dark-bg shadow-xl shadow-white/0 group-hover:shadow-white/5">
                 {icon}
             </div>
             <div className="space-y-2">
-                <p className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 uppercase tabular-nums">
+                <p className="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase tabular-nums">
                     {count.toLocaleString()}{value.includes('+') ? '+' : ''}{value.includes('M') ? 'M' : ''}
                 </p>
-                <p className="text-slate-400 uppercase tracking-[0.4em] text-[10px] font-black italic">{label}</p>
+                <p className="text-slate-500 uppercase tracking-[0.4em] text-[10px] font-black italic">{label}</p>
             </div>
         </motion.div>
     );

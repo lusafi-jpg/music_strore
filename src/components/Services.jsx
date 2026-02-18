@@ -6,7 +6,7 @@ import { CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 const Services = () => {
     return (
-        <section id="services" className="py-40 bg-white overflow-hidden uppercase">
+        <section id="services" className="py-40 bg-dark-bg overflow-hidden uppercase">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-12 gap-16 items-end mb-24">
                     <div className="lg:col-span-8 space-y-6">
@@ -23,19 +23,19 @@ const Services = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900"
+                            className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white"
                         >
-                            NOS <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-400">SERVICES</span> <span className="text-neon-pink">PRO</span>
+                            NOS <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-indigo-400">SERVICES</span> <span className="text-neon-pink">PRO</span>
                         </motion.h2>
                     </div>
                     <div className="lg:col-span-4 pb-4">
-                        <p className="text-slate-500 font-bold tracking-widest text-sm leading-relaxed border-l-4 border-slate-100 pl-8">
+                        <p className="text-slate-400 font-bold tracking-widest text-sm leading-relaxed border-l-4 border-white/5 pl-8">
                             Une suite complète d'outils conçus pour les artistes indépendants qui ne font aucun compromis sur la qualité.
                         </p>
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
                     {servicesData.map((service, index) => (
                         <motion.div
                             key={index}
@@ -47,24 +47,24 @@ const Services = () => {
                             <Link to={`/service/${service.id}`} className="no-underline group">
                                 <div className="card-pro h-full flex flex-col items-start relative overflow-hidden">
                                     {/* Subtle decorative number */}
-                                    <span className="absolute top-10 right-10 text-8xl font-black text-slate-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <span className="absolute top-10 right-10 text-8xl font-black text-white/5 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
                                         0{index + 1}
                                     </span>
 
-                                    <div className="mb-10 p-6 rounded-3xl bg-slate-50 group-hover:bg-slate-900 group-hover:text-white transition-all duration-500">
+                                    <div className="mb-10 p-6 rounded-3xl bg-white/5 group-hover:bg-white group-hover:text-dark-bg transition-all duration-500 border border-white/10 group-hover:border-white">
                                         {React.cloneElement(service.icon, { size: 40 })}
                                     </div>
 
-                                    <h3 className="text-3xl font-black mb-4 text-slate-900 group-hover:text-neon-pink transition-colors">
+                                    <h3 className="text-3xl font-black mb-4 text-white group-hover:text-neon-pink transition-colors uppercase">
                                         {service.title}
                                     </h3>
-                                    <p className="text-slate-500 mb-10 normal-case font-medium leading-relaxed">
+                                    <p className="text-slate-400 mb-10 normal-case font-medium leading-relaxed">
                                         {service.shortDescription}
                                     </p>
 
-                                    <div className="space-y-4 mb-12 w-full pt-8 border-t border-slate-50">
+                                    <div className="space-y-4 mb-12 w-full pt-8 border-t border-white/5">
                                         {service.features.slice(0, 3).map((feature, fIndex) => (
-                                            <div key={fIndex} className="flex items-center space-x-3 text-[10px] font-black text-slate-400 tracking-[0.2em]">
+                                            <div key={fIndex} className="flex items-center space-x-3 text-[10px] font-black text-slate-500 tracking-[0.2em]">
                                                 <CheckCircle2 size={16} className="text-neon-cyan" />
                                                 <span>{feature}</span>
                                             </div>
@@ -73,10 +73,10 @@ const Services = () => {
 
                                     <div className="mt-auto w-full flex items-center justify-between">
                                         <div className="space-y-1">
-                                            <p className="text-[10px] font-black text-slate-300 tracking-widest uppercase">Investissement</p>
-                                            <p className="text-3xl font-black text-slate-900 tracking-tighter">{service.price}</p>
+                                            <p className="text-[10px] font-black text-slate-500 tracking-widest uppercase">Investissement</p>
+                                            <p className="text-3xl font-black text-white tracking-tighter">{service.price}</p>
                                         </div>
-                                        <div className="w-14 h-14 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-neon-pink group-hover:text-white group-hover:border-neon-pink transition-all duration-500">
+                                        <div className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-neon-pink group-hover:text-white group-hover:border-neon-pink transition-all duration-500">
                                             <ArrowUpRight size={24} />
                                         </div>
                                     </div>

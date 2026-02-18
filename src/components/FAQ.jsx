@@ -18,11 +18,11 @@ const faqItems = [
 
 const FAQ = () => {
     return (
-        <section id="faq" className="py-24 bg-white uppercase">
+        <section id="faq" className="py-24 bg-dark-bg uppercase">
             <div className="max-w-4xl mx-auto px-6">
-                <div className="flex items-center space-x-4 mb-20 justify-center">
-                    <HelpCircle className="text-neon-cyan" size={40} />
-                    <h2 className="text-5xl font-black uppercase tracking-tighter text-gray-900 italic">Questions Fréquentes</h2>
+                <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 mb-12 sm:mb-20 justify-center text-center sm:text-left">
+                    <HelpCircle className="text-neon-cyan" size={32} />
+                    <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tighter text-white italic">Questions Fréquentes</h2>
                 </div>
                 <div className="space-y-6">
                     {faqItems.map((item, index) => (
@@ -38,15 +38,15 @@ const FAQItem = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border border-gray-100 rounded-[2rem] overflow-hidden bg-gray-50/50 hover:bg-white transition-all shadow-sm">
+        <div className="border border-white/5 rounded-[2rem] overflow-hidden bg-white/5 hover:bg-white/10 transition-all shadow-sm">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex items-center justify-between p-8 text-left bg-transparent cursor-pointer border-none"
+                className="w-full flex items-center justify-between p-6 sm:p-8 text-left bg-transparent cursor-pointer border-none"
             >
-                <span className="font-black text-lg tracking-tight text-gray-900 uppercase italic">{question}</span>
+                <span className="font-black text-base sm:text-lg tracking-tight text-white uppercase italic">{question}</span>
                 <ChevronDown className={`transition-transform duration-500 text-neon-pink ${isOpen ? 'rotate-180' : ''}`} />
             </button>
-            <div className={`transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 p-8 pt-0' : 'max-h-0 opacity-0'} overflow-hidden text-gray-600 font-bold normal-case tracking-wide`}>
+            <div className={`transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 p-6 sm:p-8 pt-0' : 'max-h-0 opacity-0'} overflow-hidden text-slate-400 font-bold normal-case tracking-wide text-sm sm:text-base`}>
                 {answer}
             </div>
         </div>

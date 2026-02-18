@@ -16,7 +16,7 @@ export const servicesData = [
             "Support à Kinshasa",
             "Codes ISRC/UPC inclus"
         ],
-        whatsappMessage: "Bonjour LUSAFI, je veux distribuer mon prochain Single."
+        whatsappMessage: "Bonjour Musik-Store,\n\nJe souhaite proposer mon prochain single pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon titre.\n\nCordialement,"
     },
     {
         id: "distribution-ep",
@@ -32,7 +32,7 @@ export const servicesData = [
             "Accompagnement stratégie",
             "Stats détaillées par titre"
         ],
-        whatsappMessage: "Bonjour LUSAFI, je prépare mon EP et je veux le distribuer."
+        whatsappMessage: "Bonjour Musik-Store,\n\nJe souhaite proposer mon prochain EP pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon projet.\n\nCordialement,"
     },
     {
         id: "distribution-album",
@@ -48,7 +48,7 @@ export const servicesData = [
             "Vérification de compte artiste",
             "Suivi personnalisé"
         ],
-        whatsappMessage: "Bonjour LUSAFI, je sors mon album et je veux la meilleure distribution."
+        whatsappMessage: "Bonjour Musik-Store,\n\nJe souhaite proposer mon prochain album pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon album.\n\nCordialement,"
     },
     {
         id: "cover-art",
@@ -64,7 +64,7 @@ export const servicesData = [
             "Visuels réseaux sociaux",
             "Retouches illimitées"
         ],
-        whatsappMessage: "Bonjour LUSAFI, j'ai besoin d'un cover art pro."
+        whatsappMessage: "Bonjour Musik-Store,\n\nJe souhaite commander un cover art professionnel pour mon prochain projet. Je serais ravi de collaborer avec vous pour créer une identité visuelle forte.\n\nMerci de me faire savoir la procédure à suivre.\n\nCordialement,"
     },
     {
         id: "promotion",
@@ -80,6 +80,6 @@ export const servicesData = [
             "Relations presse locales",
             "Analyse de conversion"
         ],
-        whatsappMessage: "Bonjour LUSAFI, je veux promouvoir ma musique."
+        whatsappMessage: "Bonjour Musik-Store,\n\nJe souhaite promouvoir ma musique via votre plateforme et intégrer vos playlists. Je serais ravi de collaborer avec vous pour booster ma visibilité.\n\nMerci de me faire savoir la procédure à suivre.\n\nCordialement,"
     }
 ];

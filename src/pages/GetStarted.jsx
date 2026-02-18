@@ -31,35 +31,35 @@ const GetStarted = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-40 pb-20 bg-[#f8fafc] uppercase overflow-hidden">
+        <div className="min-h-screen pt-40 pb-20 bg-dark-bg uppercase overflow-hidden">
             {/* Decorative background elements */}
             <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10">
-                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-100/50 blur-[120px] rounded-full"></div>
-                <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-rose-100/50 blur-[120px] rounded-full"></div>
+                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-neon-purple/10 blur-[120px] rounded-full"></div>
+                <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-neon-pink/10 blur-[120px] rounded-full"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-24 space-y-6">
+                <div className="text-center mb-16 sm:mb-24 space-y-6">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="inline-flex items-center space-x-2 px-4 py-2 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black tracking-[0.3em]"
+                        className="inline-flex items-center space-x-2 px-4 py-2 bg-white/5 border border-white/10 text-slate-300 rounded-full text-[10px] font-black tracking-[0.3em] backdrop-blur-md"
                     >
-                        <Sparkles size={14} />
+                        <Sparkles size={14} className="text-neon-pink" />
                         <span>Plateforme Artiste</span>
                     </motion.div>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-7xl md:text-9xl font-black tracking-tighter text-slate-900 leading-[0.9]"
+                        className="text-5xl sm:text-7xl md:text-9xl font-black tracking-tighter text-white leading-[0.9]"
                     >
-                        LANCE TA <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-indigo-600 italic">SORTIE</span>
+                        LANCE TA <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink via-neon-purple to-neon-cyan italic">SORTIE</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-xl text-slate-400 font-black tracking-[0.2em]"
+                        className="text-lg sm:text-xl text-slate-500 font-black tracking-[0.2em]"
                     >
                         Quel est ton objectif aujourd'hui ?
                     </motion.p>
@@ -74,22 +74,22 @@ const GetStarted = () => {
                             transition={{ delay: 0.2 + (idx * 0.1) }}
                             whileHover={{ y: -10 }}
                             onClick={() => navigate(opt.route)}
-                            className="group relative card-pro text-left flex flex-col items-start h-full border-none cursor-pointer bg-white"
+                            className="group relative card-pro text-left flex flex-col items-start h-full border-none cursor-pointer"
                         >
-                            <div className={`mb-10 w-24 h-24 rounded-3xl bg-gradient-to-br ${opt.gradient} flex items-center justify-center text-white shadow-xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6`}>
+                            <div className={`mb-10 w-24 h-24 rounded-3xl bg-gradient-to-br ${opt.gradient} flex items-center justify-center text-white shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6`}>
                                 {opt.icon}
                             </div>
 
-                            <h2 className="text-3xl font-black mb-6 text-slate-900 leading-tight">
+                            <h2 className="text-3xl font-black mb-6 text-white leading-tight uppercase italic">
                                 {opt.title}
                             </h2>
-                            <p className="text-slate-500 font-bold normal-case mb-12 flex-grow leading-relaxed">
+                            <p className="text-slate-400 font-bold normal-case mb-12 flex-grow leading-relaxed">
                                 {opt.desc}
                             </p>
 
-                            <div className="w-full flex items-center justify-between pt-8 border-t border-slate-50">
-                                <span className="text-[10px] font-black tracking-[0.3em] text-slate-400">Suivant</span>
-                                <div className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-slate-900 group-hover:text-white">
+                            <div className="w-full flex items-center justify-between pt-8 border-t border-white/5">
+                                <span className="text-[10px] font-black tracking-[0.3em] text-slate-500">Suivant</span>
+                                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-dark-bg">
                                     <ArrowRight size={24} />
                                 </div>
                             </div>
