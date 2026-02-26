@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #121417;
+  --color-dark-surface: #1a1d23;
+  --color-dark-card: #242830;
+  --color-brand-primary: #00A8C5;
+  --color-brand-secondary: #4A47A3;
+  --color-brand-tertiary: #A63D8D;
+  --color-brand-quaternary: #FF4E63;
+  --color-brand-quinary: #FF9331;
+  --color-accent: #FF4E63;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --font-urban: "Inter", "Outfit", sans-serif;
+
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.25);
+  --shadow-pro: 0 20px 50px -12px rgba(0, 0, 0, 0.3);
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-text-primary font-urban antialiased selection:bg-brand-primary selection:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 rounded-2xl font-semibold transition-all duration-300 active:scale-95 disabled:opacity-50 flex items-center justify-center space-x-3 bg-brand-primary text-text-primary hover:bg-blue-600 hover:shadow-pro hover:-translate-y-1;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 rounded-2xl font-semibold transition-all duration-300 active:scale-95 disabled:opacity-50 flex items-center justify-center space-x-3 bg-transparent border border-brand-primary/30 text-brand-primary hover:bg-brand-primary/10 hover:border-brand-primary/50;
+  }
+
+  .card-pro {
+    @apply bg-dark-surface/40 backdrop-blur-xl rounded-2xl p-8 shadow-soft border border-white/5 transition-all duration-500 hover:shadow-pro hover:-translate-y-2;
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 8s ease-in-out infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .bg-mesh {
+    background-image: 
+      radial-gradient(circle at 20% 80%, var(--color-brand-primary) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, var(--color-brand-quaternary) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, var(--color-brand-secondary) 0%, transparent 50%);
+  }
+}
+
+/* Custom Utilities */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-accent;
+}
+
+.bg-mesh {
+  background-color: #0a0b0e;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(16, 185, 129, 0.05) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(100, 116, 139, 0.05) 0, transparent 50%);
+  background-attachment: fixed;
+}
+
+.glass-pro {
+  @apply bg-dark-surface/40 backdrop-blur-2xl border border-white/10 shadow-soft;
+}
