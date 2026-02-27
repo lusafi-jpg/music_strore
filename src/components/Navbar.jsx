@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Menu, X, Music, ArrowRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,24 +17,28 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed w-full z-[100] transition-all duration-500 px-4 sm:px-6 ${isScrolled ? 'top-4' : 'top-0'}`}>
-            <div className={`max-w-7xl mx-auto transition-all duration-500 px-4 sm:px-8 py-4 flex justify-between items-center ${isScrolled ? 'glass-pro rounded-[2rem]' : 'bg-transparent'}`}>
-                <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group cursor-pointer no-underline text-white">
+            <div className={`max-w-7xl mx-auto transition-all duration-500 px-4 sm:px-8 py-4 sm:py-5 flex justify-between items-center ${isScrolled ? 'glass-pro rounded-[2rem]' : 'bg-transparent'}`}>
+                <Link to="/" className="flex items-center space-x-4 sm:space-x-6 group cursor-pointer no-underline text-white">
                     <motion.div
-                        whileHover={{ rotate: 360 }}
-                        transition={{ duration: 1 }}
-                        className="p-2 bg-white rounded-xl sm:rounded-2xl shadow-lg shadow-white/5"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex items-center justify-center"
                     >
-                        <Music className="text-dark-bg w-5 h-5 sm:w-6 sm:h-6" />
+                        <img
+                            src="/img/LOGO-removebg-preview.png"
+                            alt="Vibrato Logo"
+                            className="h-17 sm:h-24 md:h-27 w-auto object-contain drop-shadow-lg"
+                        />
                     </motion.div>
-                    <span className="text-2xl sm:text-3xl font-black tracking-tighter italic">Vibrato</span>
+                    <span className="text-2xl sm:text-3xl font-black tracking-tighter italic text-white drop-shadow-md">Vibrato</span>
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center space-x-12">
-                    <nav className="flex items-center space-x-10">
+                <div className="hidden md:flex items-center space-x-16 md:ml-12">
+                    <nav className="flex items-center space-x-12">
                         <NavLink to="/" label="Accueil" />
-                        <a href="#services" className="hover:text-brand-primary transition-colors font-black uppercase text-[10px] tracking-[0.3em] no-underline text-slate-400">Services</a>
-                        <a href="#faq" className="hover:text-brand-primary transition-colors font-black uppercase text-[10px] tracking-[0.3em] no-underline text-slate-400">Faq</a>
+                        <NavLink to="/services" label="Services" />
+                        <a href="/#faq" className="hover:text-neon-pink transition-colors font-black uppercase text-[10px] tracking-[0.3em] no-underline text-slate-400">Faq</a>
                     </nav>
 
                     <Link to="/start" className="no-underline">
@@ -68,8 +72,8 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col space-y-8 uppercase">
                             <MobileNavLink to="/" label="Accueil" onClick={() => setIsOpen(false)} />
-                            <a href="#services" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Services</a>
-                            <a href="#faq" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Faq</a>
+                            <Link to="/services" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Services</Link>
+                            <a href="/#faq" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Faq</a>
                         </div>
                         <Link to="/start" className="no-underline" onClick={() => setIsOpen(false)}>
                             <button className="w-full py-6 rounded-3xl bg-neon-pink text-white font-black text-xl uppercase tracking-widest shadow-xl shadow-neon-pink/20">

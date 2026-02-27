@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
 import GetStarted from './pages/GetStarted';
+import ServicesPage from './pages/Services';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route path="/start" element={<GetStarted />} />
             <Route path="/service/:id" element={<ServiceDetail />} />
           </Routes>

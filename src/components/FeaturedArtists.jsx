@@ -1,48 +1,77 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Users, TrendingUp, ArrowRight, ArrowLeft, PieChart, Zap, Link2, Music, Image } from 'lucide-react';
+import { Mic, Film, Music, Calendar, Radio, Users, Scissors, Camera, Zap, TrendingUp, ArrowRight, ArrowLeft } from 'lucide-react';
 
 const FeaturedArtists = () => {
     const tools = [
         {
-            title: "Splits",
-            description: "Répartissez vos revenus entre plusieurs créateurs",
-            icon: <PieChart size={24} />,
+            title: "Studio d'Enregistrement",
+            description: "Des cabines insonorisées professionnelles et du matériel de pointe pour vos sessions.",
+            icon: <Mic size={24} />,
+            image: "/img/Un micro professionnel pour le Studio d'Enregistrement.jpg",
             gradient: "from-brand-primary to-brand-secondary",
             delay: 0
         },
         {
-            title: "Accelerator", 
-            description: "Développez votre carrière grâce à nos outils de promotion automatisés",
-            icon: <Zap size={24} />,
+            title: "Mixage & Mastering",
+            description: "Ingénieurs du son experts pour finaliser vos morceaux avec une qualité radio.",
+            icon: <Music size={24} />,
+            image: "/img/Une console de mixage pour le Mixage & Mastering.jpg",
             gradient: "from-brand-secondary to-brand-tertiary",
             delay: 0.1
         },
         {
-            title: "Linkshare",
-            description: "Obtenez un multi-lien pour promouvoir votre sortie sur chaque plateforme",
-            icon: <Link2 size={24} />,
+            title: "Réalisation de Clips",
+            description: "Caméras 4K, drones, éclairage cinéma et réalisateurs visionnaires pour vos clips musicaux.",
+            icon: <Camera size={24} />,
+            image: "/img/Une caméra cinéma pour la Réalisation de Clip.jpg",
             gradient: "from-brand-tertiary to-brand-quaternary",
             delay: 0.2
         },
         {
-            title: "Mastering",
-            description: "Optimisez vos fichiers audio grâce à l'IA",
-            icon: <Music size={24} />,
+            title: "Montage & Post-prod",
+            description: "Étalonnage couleur, effets spéciaux et montage dynamique pour un rendu époustouflant.",
+            icon: <Scissors size={24} />,
+            image: "/img/mont.jpg",
             gradient: "from-brand-quaternary to-brand-quinary",
             delay: 0.3
         },
         {
-            title: "Artwork",
-            description: "Créez facilement vos visuels de sortie",
-            icon: <Image size={24} />,
+            title: "Podcasts & Interviews",
+            description: "Plateaux équipés pour enregistrer vos émissions, interviews ou podcasts en haute qualité.",
+            icon: <Radio size={24} />,
+            image: "/img/montage.jpg",
             gradient: "from-brand-quinary to-brand-primary",
             delay: 0.4
+        },
+        {
+            title: "Documentaires",
+            description: "Captation de votre processus créatif ou de votre tournée pour des documentaires immersifs.",
+            icon: <Film size={24} />,
+            image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800",
+            gradient: "from-brand-primary to-brand-quaternary",
+            delay: 0.5
+        },
+        {
+            title: "Concerts & Lives",
+            description: "Organisation, sonorisation et captation vidéo multi-caméras de vos performances live.",
+            icon: <Users size={24} />,
+            image: "/img/Une scène de concert avec des lumières pour Concerts & Live.jpg",
+            gradient: "from-brand-secondary to-brand-quinary",
+            delay: 0.6
+        },
+        {
+            title: "Événementiel",
+            description: "Release parties, showcases et divers événements sur mesure pour promouvoir vos projets.",
+            icon: <Calendar size={24} />,
+            image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800",
+            gradient: "from-brand-tertiary to-brand-primary",
+            delay: 0.7
         }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+    const [isAutoPlaying] = useState(true);
     const [itemsPerView, setItemsPerView] = useState(3);
 
     // Responsive items per view
@@ -65,24 +94,24 @@ const FeaturedArtists = () => {
     // Auto-play functionality
     useEffect(() => {
         if (!isAutoPlaying) return;
-        
+
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => 
+            setCurrentIndex((prevIndex) =>
                 (prevIndex + 1) % Math.ceil(tools.length / itemsPerView)
             );
         }, 4000);
-        
+
         return () => clearInterval(interval);
     }, [isAutoPlaying, itemsPerView, tools.length]);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             (prevIndex + 1) % Math.ceil(tools.length / itemsPerView)
         );
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             (prevIndex - 1 + Math.ceil(tools.length / itemsPerView)) % Math.ceil(tools.length / itemsPerView)
         );
     };
@@ -105,7 +134,7 @@ const FeaturedArtists = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -113,28 +142,28 @@ const FeaturedArtists = () => {
                 >
                     <div className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-full text-text-primary text-sm font-medium mb-6">
                         <TrendingUp size={16} />
-                        <span>Outils Professionnels</span>
+                        <span>Le Complexe Vibrato 360°</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6">
-                        Des outils pour <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-quaternary to-brand-quinary">tous les artistes</span>
+                        Des infrastructures pour <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-quaternary to-brand-quinary">concrétiser vos visions</span>
                     </h2>
                     <p className="text-text-secondary text-lg max-w-4xl mx-auto mb-12">
-                        En plus de distribuer votre musique, Vibrato vous accompagne avec une suite complète d'outils et des technologies innovantes, pour vous permettre de préparer et d'optimiser toutes vos sorties musicales !
+                        Bien plus qu'un simple label ou distributeur, Vibrato centralise tous les besoins des créateurs: studios d'enregistrement, tournages vidéo, espaces de podcasts ou d'événements. Venez créer chez nous!
                     </p>
                 </motion.div>
 
                 {/* Carousel Container */}
                 <div className="relative mb-16">
                     {/* Navigation Arrows */}
-                    <button 
+                    <button
                         onClick={prevSlide}
                         className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-dark-surface/80 backdrop-blur-xl rounded-full flex items-center justify-center text-text-primary hover:bg-brand-primary hover:text-white transition-all duration-300 border border-white/10 hover:border-brand-primary/50 shadow-lg hover:shadow-brand-primary/20"
                         aria-label="Slide précédent"
                     >
                         <ArrowLeft size={20} />
                     </button>
-                    
-                    <button 
+
+                    <button
                         onClick={nextSlide}
                         className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-dark-surface/80 backdrop-blur-xl rounded-full flex items-center justify-center text-text-primary hover:bg-brand-primary hover:text-white transition-all duration-300 border border-white/10 hover:border-brand-primary/50 shadow-lg hover:shadow-brand-primary/20"
                         aria-label="Slide suivant"
@@ -145,7 +174,7 @@ const FeaturedArtists = () => {
                     {/* Carousel Content */}
                     <div className="overflow-hidden rounded-2xl">
                         <AnimatePresence mode="wait">
-                            <motion.div 
+                            <motion.div
                                 key={currentIndex}
                                 initial={{ opacity: 0, x: 300 }}
                                 animate={{ opacity: 1, x: 0 }}
@@ -172,12 +201,23 @@ const FeaturedArtists = () => {
                                         transition={{ delay: index * 0.1 }}
                                         className={`flex-1 min-w-0 group relative`}
                                     >
-                                        <div className="h-full bg-dark-surface/40 backdrop-blur-xl rounded-2xl p-8 border border-white/5 hover:border-brand-primary/20 transition-all duration-500 hover:shadow-pro hover:-translate-y-2 relative overflow-hidden">
-                                            {/* Background gradient */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br ${tool.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                                            
+                                        <div className="h-full bg-dark-surface/40 backdrop-blur-xl rounded-2xl border border-white/5 hover:border-brand-primary/20 transition-all duration-500 hover:shadow-pro hover:-translate-y-2 relative overflow-hidden flex flex-col min-h-[420px]">
+                                            {/* Background Image Layer */}
+                                            <div className="absolute inset-0 z-0">
+                                                <img
+                                                    src={tool.image}
+                                                    alt={tool.title}
+                                                    className="w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-80 transition-all duration-700"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/90 via-dark-bg/60 to-transparent"></div>
+                                                <div className="absolute inset-0 bg-dark-bg/30 group-hover:bg-dark-bg/10 transition-colors duration-500"></div>
+                                            </div>
+
+                                            {/* Accent Background gradient */}
+                                            <div className={`absolute inset-0 z-0 bg-gradient-to-br ${tool.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 mix-blend-overlay`}></div>
+
                                             {/* Content */}
-                                            <div className="relative z-10">
+                                            <div className="relative z-10 p-8 flex flex-col h-full flex-grow">
                                                 {/* Icon */}
                                                 <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${tool.gradient} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-500`}>
                                                     <div className="text-text-primary">
@@ -189,9 +229,9 @@ const FeaturedArtists = () => {
                                                 <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-primary group-hover:to-brand-quaternary transition-all duration-500">
                                                     {tool.title}
                                                 </h3>
-                                                
+
                                                 {/* Description */}
-                                                <p className="text-text-secondary mb-6 leading-relaxed">
+                                                <p className="text-text-secondary mb-6 leading-relaxed flex-grow text-sm drop-shadow-md">
                                                     {tool.description}
                                                 </p>
 
@@ -216,11 +256,10 @@ const FeaturedArtists = () => {
                             <button
                                 key={index}
                                 onClick={() => goToSlide(index)}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                    index === currentIndex 
-                                        ? 'bg-brand-quaternary scale-125 shadow-lg shadow-brand-quaternary/30' 
-                                        : 'bg-text-secondary/50 hover:bg-text-secondary'
-                                }`}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                                    ? 'bg-brand-quaternary scale-125 shadow-lg shadow-brand-quaternary/30'
+                                    : 'bg-text-secondary/50 hover:bg-text-secondary'
+                                    }`}
                                 aria-label={`Aller au slide ${index + 1}`}
                             />
                         ))}
@@ -228,7 +267,7 @@ const FeaturedArtists = () => {
                 </div>
 
                 {/* Bottom CTA */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -240,12 +279,17 @@ const FeaturedArtists = () => {
                             <Zap size={24} className="text-white" />
                         </div>
                         <div className="text-left">
-                            <p className="text-white font-bold text-lg">Accédez à tous les outils</p>
-                            <p className="text-white/80 text-sm">Optimisez votre carrière musicale</p>
+                            <p className="text-white font-bold text-lg">Réservez vos sessions dès maintenant</p>
+                            <p className="text-white/80 text-sm">Tournage, enregistrement, événementiel...</p>
                         </div>
-                        <button className="ml-4 px-6 py-3 bg-white text-brand-primary font-bold rounded-xl hover:bg-white/90 transition-colors">
-                            Commencer
-                        </button>
+                        <a
+                            href="https://wa.me/243800000000?text=Bonjour%20Vibrato,%20je%20souhaite%20r%C3%A9server%20une%20session%20!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-4 px-6 py-3 bg-white text-brand-primary font-bold rounded-xl hover:bg-white/90 transition-colors no-underline block"
+                        >
+                            Réserver
+                        </a>
                     </div>
                 </motion.div>
             </div>

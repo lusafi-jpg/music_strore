@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
-import Services from '../components/Services';
 import Stats from '../components/Stats';
 import FAQ from '../components/FAQ';
-import Showcase from '../components/Showcase';
 import FeaturedArtists from '../components/FeaturedArtists';
 import Pricing from '../components/Pricing';
 import FloatingParticles from '../components/FloatingParticles';
@@ -53,11 +51,6 @@ export default function Home() {
             </div>
 
             <div className="relative">
-                <Showcase />
-                <FloatingParticles density={35} />
-            </div>
-
-            <div className="relative">
                 <FeaturedArtists />
                 <FloatingParticles density={35} />
             </div>
@@ -66,11 +59,6 @@ export default function Home() {
                 <Pricing />
                 <FloatingParticles density={35} />
             </div>
-
-            <section id="services" className="relative">
-                <Services />
-                <FloatingParticles density={35} />
-            </section>
 
             <section id="faq" className="relative">
                 <FAQ />

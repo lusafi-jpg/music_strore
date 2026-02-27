@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-[#000] pt-20">
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-[#000] pt-32 sm:pt-40">
             {/* Immersive Background Image - Ultra HQ Layer */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -27,15 +27,15 @@ const Hero = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="lg:col-span-7 space-y-10"
+                    className="lg:col-span-7 space-y-12"
                 >
                     <div className="inline-flex items-center space-x-3 px-5 py-2.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full text-slate-300 text-xs font-black uppercase tracking-[0.2em] shadow-xl">
                         <TrendingUp size={16} className="text-neon-pink" />
                         <span>Plateforme N°1 à Kinshasa</span>
                     </div>
 
-                    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter text-white text-center sm:text-left">
-                        FAITES <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink via-neon-purple to-neon-cyan">VIBRER</span> <br />
+                    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-tight tracking-tight text-white text-center sm:text-left">
+                        FAITES <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-400 to-white">VIBRER</span> <br />
                         VOTRE MUSIQUE
                     </h1>
 
@@ -44,7 +44,7 @@ const Hero = () => {
                         Distribution, Design et Promotion professionnelle pour les artistes indépendants.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-5 pt-4 justify-center sm:justify-start">
+                    <div className="flex flex-col sm:flex-row gap-6 pt-6 justify-center sm:justify-start">
                         <Link to="/start" className="no-underline">
                             <motion.button
                                 whileHover={{ scale: 1.05 }}

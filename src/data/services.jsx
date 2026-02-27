@@ -1,85 +1,78 @@
 import React from 'react';
-import { Globe, Palette, Megaphone, Disc, DiscAlbum } from 'lucide-react';
+import { Rocket, Star, Zap, Infinity as InfinityIcon } from 'lucide-react';
 
 export const servicesData = [
     {
-        id: "distribution-single",
-        title: "Distribution Single",
-        shortDescription: "Sortez votre prochain morceau sur toutes les plateformes.",
-        longDescription: "Idéal pour les artistes qui sortent des morceaux régulièrement. Nous gérons la distribution sur Spotify, Apple Music, Boomplay et plus de 150 autres plateformes.",
-        price: "15$",
-        icon: <Globe size={32} />,
+        id: "vibe-drop",
+        title: "Vibe-Drop",
+        shortDescription: "L'essentiel pour poser sa marque.",
+        longDescription: "Distribution sur les plateformes mondiales. Idéal pour votre première sortie.",
+        price: "29 - 49$",
+        icon: <Rocket size={32} />,
         color: "cyan",
+        cible: "L'artiste qui lance son premier single.",
         features: [
-            "Ventes et streams illimités",
-            "Paiements via Mobile Money",
-            "Support à Kinshasa",
-            "Codes ISRC/UPC inclus"
+            "Distribution : Plateformes mondiales + Date de sortie au choix.",
+            "Propreté : Utilisation de votre propre code ISRC (Traçabilité totale).",
+            "Suivi : Rapports de vente officiels.",
+            "Support : Assistance client (réponse sous 72h)."
         ],
-        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite proposer mon prochain single pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon titre.\n\nCordialement,"
+        whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Drop. Je souhaite sortir mon premier projet et poser ma marque.\n\nMerci de m'indiquer la marche à suivre."
     },
     {
-        id: "distribution-ep",
-        title: "Distribution EP",
-        shortDescription: "Pour vos projets de 3 à 6 titres.",
-        longDescription: "Donnez de l'ampleur à votre carrière avec un EP. Nous assurons une visibilité maximale pour votre projet multi-titres sur le marché international.",
-        price: "35$",
-        icon: <Disc size={32} />,
+        id: "vibe-master",
+        title: "Vibe-Master",
+        shortDescription: "L'image carrée et la gestion pro.",
+        longDescription: "Tout le Vibe-Drop, plus une gestion avancée pour les artistes structurés.",
+        price: "69 - 99$",
+        icon: <Star size={32} />,
         color: "purple",
+        cible: "L'artiste qui veut une image 'Carrée' et gérer ses droits comme un pro.",
         features: [
-            "Jusqu'à 6 titres inclus",
-            "Distribution Premium",
-            "Accompagnement stratégie",
-            "Stats détaillées par titre"
+            "Tout le Vibe-Drop",
+            "Social Power : Sorties illimitées sur TikTok, IG, FB & YouTube (20% frais).",
+            "Identité : Badges de vérification Spotify & Apple Music.",
+            "Entreprise : Splits (Répartition auto) + Nom de Label personnalisé.",
+            "Visuel : Outils de création de pochettes d'album pro.",
+            "Support : Assistance prioritaire (réponse sous 48h)."
         ],
-        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite proposer mon prochain EP pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon projet.\n\nCordialement,"
+        whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Master. Je souhaite gérer mes droits comme un pro et avoir une image carrée.\n\nMerci de m'indiquer la marche à suivre."
     },
     {
-        id: "distribution-album",
-        title: "Distribution Album",
-        shortDescription: "Consacrez votre talent avec un album complet.",
-        longDescription: "L'outil ultime pour les artistes confirmés. Distribution illimitée de titres pour votre album, avec une gestion de catalogue prioritaire.",
-        price: "60$",
-        icon: <DiscAlbum size={32} />,
+        id: "vibe-flash",
+        title: "Vibe-Flash",
+        shortDescription: "La visibilité maximale pour créer l'impact.",
+        longDescription: "Tout le Vibe-Master, avec des données en temps réel et des opportunités promotionnelles.",
+        price: "99 - 149$",
+        icon: <Zap size={32} />,
         color: "pink",
+        cible: "L'artiste en plein buzz qui veut saturer le marché et protéger ses revenus.",
         features: [
-            "Titres illimités",
-            "Placement Playlist prioritaire",
-            "Vérification de compte artiste",
-            "Suivi personnalisé"
+            "Tout le Vibe-Master",
+            "Données : Rapports quotidiens des tendances.",
+            "Protection : YouTube Content ID.",
+            "Promo : Opportunités exclusives (Pitching, Ambassadeurs, Twitch).",
+            "Technique : Codes UPC personnalisés + Restrictions géographiques.",
+            "Support : Assistance VIP (réponse sous 24h)."
         ],
-        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite proposer mon prochain album pour distribution sur votre plateforme. Je serais ravi de collaborer avec vous afin de toucher un large public et partager ma musique avec vos auditeurs.\n\nMerci de me faire savoir la procédure à suivre pour soumettre mon album.\n\nCordialement,"
+        whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Flash. Je veux maximer ma visibilité et protéger mes revenus.\n\nMerci de m'indiquer la marche à suivre."
     },
     {
-        id: "cover-art",
-        title: "Cover Art / Design",
-        shortDescription: "Une identité visuelle unique qui capte l'attention.",
-        longDescription: "Nos designers spécialisés créent des pochettes captivantes respectant les normes du streaming tout en imposant votre style visuel.",
-        price: "40$",
-        icon: <Palette size={32} />,
-        color: "pink",
+        id: "vibe-flux",
+        title: "Vibe-Flux",
+        shortDescription: "L'écosystème illimité pour ceux qui ne s'arrêtent jamais.",
+        longDescription: "Abonnement tout compris pour des sorties illimitées et l'accès à notre réseau d'experts.",
+        price: "15$/mois",
+        icon: <InfinityIcon size={32} />,
+        color: "yellow",
+        cible: "Le 'Grinder' qui sort un son par mois et veut faire partie d'une communauté d'élite.",
         features: [
-            "Design 3000x3000px HQ",
-            "Optimisé Streaming",
-            "Visuels réseaux sociaux",
-            "Retouches illimitées"
+            "Sorties Illimitées : Ne paye plus à chaque morceau.",
+            "Visibilité : Création de ta Chaîne d'Artiste Officielle (OAC) sur YouTube.",
+            "Réseau : Accès aux Ateliers experts et Conférences privées.",
+            "Automator : Envoi automatique vers les nouveaux magasins mondiaux.",
+            "Avantages : Coût réduit pour les artistes en vedette + Accès au lieu d'enregistrement."
         ],
-        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite commander un cover art professionnel pour mon prochain projet. Je serais ravi de collaborer avec vous pour créer une identité visuelle forte.\n\nMerci de me faire savoir la procédure à suivre.\n\nCordialement,"
-    },
-    {
-        id: "promotion",
-        title: "Promotion & Playlist",
-        shortDescription: "Boostez votre visibilité et intégrez les meilleures playlists.",
-        longDescription: "Nous proposons des campagnes ciblées sur Instagram/TikTok et des placements stratégiques pour toucher une audience réelle.",
-        price: "25$",
-        icon: <Megaphone size={32} />,
-        color: "purple",
-        features: [
-            "Placement Playlist Curatée",
-            "Campagne Ads TikTok",
-            "Relations presse locales",
-            "Analyse de conversion"
-        ],
-        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite promouvoir ma musique via votre plateforme et intégrer vos playlists. Je serais ravi de collaborer avec vous pour booster ma visibilité.\n\nMerci de me faire savoir la procédure à suivre.\n\nCordialement,"
+        whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite souscrire à l'abonnement Vibe-Flux pour des sorties illimitées et rejoindre votre communauté.\n\nMerci de m'indiquer la marche à suivre."
     }
 ];

@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight, Zap, Crown, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     const plans = [
         {
-            name: "START",
-            price: "15$",
-            period: "/mois",
-            description: "Parfait pour les artistes débutants",
+            name: "Vibe-Drop",
+            price: "39$",
+            period: "À partir de",
+            description: "Pour lancer votre premier single proprement.",
             features: [
                 "Distribution sur 30+ plateformes",
                 "Analytiques de base",
@@ -18,13 +19,14 @@ const Pricing = () => {
             ],
             gradient: "from-brand-primary to-brand-secondary",
             popular: false,
-            delay: 0
+            delay: 0,
+            link: "/pack/vibe-drop"
         },
         {
-            name: "PRO",
-            price: "45$",
-            period: "/mois",
-            description: "Le choix des artistes professionnels",
+            name: "Vibe-Master",
+            price: "89$",
+            period: "À partir de",
+            description: "Pour les artistes qui veulent une image professionnelle.",
             features: [
                 "Distribution sur 150+ plateformes",
                 "Analytiques avancées",
@@ -36,15 +38,16 @@ const Pricing = () => {
             ],
             gradient: "from-brand-secondary to-brand-tertiary",
             popular: true,
-            delay: 0.1
+            delay: 0.1,
+            link: "/pack/vibe-master"
         },
         {
-            name: "ENTERPRISE",
-            price: "199$",
-            period: "/mois",
-            description: "Pour les labels et agences",
+            name: "Vibe-Flash",
+            price: "129$",
+            period: "À partir de",
+            description: "Pour créer un impact fort et protéger vos revenus.",
             features: [
-                "Tout le plan PRO",
+                "Tout le plan Vibe-Master",
                 "Gestion multi-artistes",
                 "API & intégrations",
                 "Manager dédié",
@@ -55,7 +58,24 @@ const Pricing = () => {
             ],
             gradient: "from-brand-tertiary to-brand-quaternary",
             popular: false,
-            delay: 0.2
+            delay: 0.2,
+            link: "/pack/vibe-flash"
+        },
+        {
+            name: "Vibe-Flux",
+            price: "15$",
+            period: "/mois",
+            description: "Sorties illimitées + accompagnement stratégique (Abonnement).",
+            features: [
+                "Sorties illimitées",
+                "Accompagnement stratégique",
+                "Support dédié 24/7",
+                "Accès à la communauté"
+            ],
+            gradient: "from-brand-quaternary to-brand-quinary",
+            popular: false,
+            delay: 0.3,
+            link: "/pack/vibe-flux"
         }
     ];
 
@@ -69,7 +89,7 @@ const Pricing = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -80,16 +100,15 @@ const Pricing = () => {
                         <span>Tarifs Avantageux</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6">
-                        Choisissez Votre <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-quaternary to-brand-quinary">Formule</span>
+                        Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-quaternary to-brand-quinary">Packs</span>
                     </h2>
                     <p className="text-text-secondary text-lg max-w-3xl mx-auto">
-                        Des tarifs transparents adaptés à chaque étape de votre carrière musicale. 
-                        Commencez petit et grandissez avec nous.
+                        Des offres taillées pour chaque étape de votre évolution musicale.
                     </p>
                 </motion.div>
 
                 {/* Pricing Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                     {plans.map((plan, index) => (
                         <motion.div
                             key={index}
@@ -109,31 +128,29 @@ const Pricing = () => {
                                 </div>
                             )}
 
-                            <div className={`h-full bg-dark-surface/40 backdrop-blur-xl rounded-2xl p-8 border transition-all duration-500 hover:shadow-pro hover:-translate-y-2 relative overflow-hidden ${
-                                plan.popular 
-                                    ? 'border-brand-quaternary/30 shadow-2xl shadow-brand-quaternary/20' 
-                                    : 'border-white/5 hover:border-brand-primary/20'
-                            }`}>
+                            <div className={`h-full bg-dark-surface/40 backdrop-blur-xl rounded-2xl p-8 border transition-all duration-500 hover:shadow-pro hover:-translate-y-2 relative overflow-hidden ${plan.popular
+                                ? 'border-brand-quaternary/30 shadow-2xl shadow-brand-quaternary/20'
+                                : 'border-white/5 hover:border-brand-primary/20'
+                                }`}>
                                 {/* Background gradient */}
                                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-0 hover:opacity-5 transition-opacity duration-500`}></div>
-                                
+
                                 {/* Content */}
                                 <div className="relative z-10">
                                     {/* Header */}
                                     <div className="text-center mb-8">
-                                        <h3 className={`text-2xl font-bold mb-2 transition-colors duration-500 ${
-                                            plan.popular ? 'text-transparent bg-clip-text bg-gradient-to-r from-brand-quaternary to-brand-quinary' : 'text-text-primary'
-                                        }`}>
+                                        <h3 className={`text-2xl font-bold mb-2 transition-colors duration-500 ${plan.popular ? 'text-transparent bg-clip-text bg-gradient-to-r from-brand-quaternary to-brand-quinary' : 'text-text-primary'
+                                            }`}>
                                             {plan.name}
                                         </h3>
                                         <p className="text-text-secondary text-sm mb-4">{plan.description}</p>
-                                        <div className="flex items-baseline justify-center space-x-1">
-                                            <span className={`text-4xl font-black transition-colors duration-500 ${
-                                                plan.popular ? 'text-transparent bg-clip-text bg-gradient-to-r from-brand-quaternary to-brand-quinary' : 'text-text-primary'
-                                            }`}>
+                                        <div className="flex items-baseline justify-center space-x-2">
+                                            <span className="text-text-secondary text-sm">{plan.period !== "/mois" ? plan.period : ""}</span>
+                                            <span className={`text-4xl font-black transition-colors duration-500 ${plan.popular ? 'text-transparent bg-clip-text bg-gradient-to-r from-brand-quaternary to-brand-quinary' : 'text-text-primary'
+                                                }`}>
                                                 {plan.price}
                                             </span>
-                                            <span className="text-text-secondary">{plan.period}</span>
+                                            <span className="text-text-secondary">{plan.period === "/mois" ? plan.period : ""}</span>
                                         </div>
                                     </div>
 
@@ -141,9 +158,8 @@ const Pricing = () => {
                                     <div className="space-y-4 mb-8">
                                         {plan.features.map((feature, fIndex) => (
                                             <div key={fIndex} className="flex items-center space-x-3">
-                                                <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                                                    plan.popular ? 'bg-brand-quaternary/20' : 'bg-brand-primary/20'
-                                                }`}>
+                                                <div className={`w-5 h-5 rounded-full flex items-center justify-center ${plan.popular ? 'bg-brand-quaternary/20' : 'bg-brand-primary/20'
+                                                    }`}>
                                                     <Check size={12} className={plan.popular ? 'text-brand-quaternary' : 'text-brand-primary'} />
                                                 </div>
                                                 <span className="text-text-secondary text-sm leading-relaxed">{feature}</span>
@@ -152,14 +168,15 @@ const Pricing = () => {
                                     </div>
 
                                     {/* CTA Button */}
-                                    <button className={`w-full py-4 font-black uppercase tracking-wider rounded-xl transition-all duration-500 flex items-center justify-center space-x-2 group ${
-                                        plan.popular
+                                    <Link to={plan.link} className="no-underline block">
+                                        <button className={`w-full py-4 font-black uppercase tracking-wider rounded-xl transition-all duration-500 flex items-center justify-center space-x-2 group ${plan.popular
                                             ? 'bg-gradient-to-r from-brand-quaternary to-brand-quinary text-white hover:from-brand-quinary hover:to-brand-primary shadow-lg shadow-brand-quaternary/20'
                                             : 'bg-gradient-to-r from-brand-primary to-brand-secondary text-text-primary hover:from-brand-secondary hover:to-brand-tertiary'
-                                    }`}>
-                                        <span>Choisir {plan.name}</span>
-                                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                                    </button>
+                                            }`}>
+                                            <span>Découvrir</span>
+                                            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>
@@ -167,7 +184,7 @@ const Pricing = () => {
                 </div>
 
                 {/* Bottom Info */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

@@ -6,35 +6,36 @@ import { CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 const Services = () => {
     return (
-        <section id="services" className="py-32 bg-gradient-to-b from-[#000] to-[#1c1e1f]/30 relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute inset-0">
-                <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/3 blur-3xl rounded-full"></div>
-                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/3 blur-3xl rounded-full"></div>
-            </div>
-            
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Header */}
-                <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-20"
-                >
-                    <div className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-full text-text-primary text-sm font-medium mb-6">
-                        <span>Nos Solutions</span>
+        <section id="services" className="py-40 bg-dark-bg overflow-hidden uppercase">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="grid lg:grid-cols-12 gap-16 items-end mb-24">
+                    <div className="lg:col-span-8 space-y-6">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-neon-purple font-black tracking-[0.3em] text-sm"
+                        >
+                            Passez au niveau supérieur
+                        </motion.div>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white"
+                        >
+                            NOS <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-indigo-400">TARIFS</span>
+                        </motion.h2>
                     </div>
-                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6">
-                        Services <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-accent">Professionnels</span>
-                    </h2>
-                    <p className="text-text-secondary text-lg max-w-3xl mx-auto">
-                        Tout ce dont vous avez besoin pour développer votre carrière musicale. 
-                        Distribution, design et promotion de qualité professionnelle.
-                    </p>
-                </motion.div>
+                    <div className="lg:col-span-4 pb-4">
+                        <p className="text-slate-400 font-bold tracking-widest text-sm leading-relaxed border-l-4 border-white/5 pl-8">
+                            Une suite complète d'outils conçus pour les artistes indépendants qui ne font aucun compromis sur la qualité.
+                        </p>
+                    </div>
+                </div>
 
-                {/* Services Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
                     {servicesData.map((service, index) => (
                         <motion.div
                             key={index}
@@ -44,42 +45,45 @@ const Services = () => {
                             transition={{ delay: index * 0.1 }}
                         >
                             <Link to={`/service/${service.id}`} className="no-underline group">
-                                <div className="h-full bg-dark-surface/40 backdrop-blur-xl rounded-2xl p-8 border border-white/5 hover:border-brand-primary/20 transition-all duration-500 hover:shadow-pro hover:-translate-y-2">
-                                    {/* Icon */}
-                                    <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-primary/10 rounded-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-primary/20 transition-all duration-500">
-                                        <div className="text-brand-primary">
-                                            {React.cloneElement(service.icon, { size: 28 })}
-                                        </div>
+                                <div className="card-pro h-full flex flex-col items-start relative overflow-hidden">
+                                    {/* Subtle decorative number */}
+                                    <span className="absolute top-10 right-10 text-8xl font-black text-white/5 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                                        0{index + 1}
+                                    </span>
+
+                                    <div className="mb-10 p-6 rounded-3xl bg-white/5 group-hover:bg-white group-hover:text-dark-bg transition-all duration-500 border border-white/10 group-hover:border-white">
+                                        {React.cloneElement(service.icon, { size: 40 })}
                                     </div>
 
-                                    {/* Title */}
-                                    <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-brand-primary transition-colors">
+                                    <h3 className="text-3xl font-black mb-4 text-white group-hover:text-neon-pink transition-colors uppercase">
                                         {service.title}
                                     </h3>
-                                    
-                                    {/* Description */}
-                                    <p className="text-text-secondary mb-6 leading-relaxed">
+                                    <p className="text-slate-400 mb-10 normal-case font-medium leading-relaxed">
                                         {service.shortDescription}
                                     </p>
 
-                                    {/* Features */}
-                                    <div className="space-y-3 mb-8">
-                                        {service.features.slice(0, 3).map((feature, fIndex) => (
-                                            <div key={fIndex} className="flex items-center space-x-3">
-                                                <CheckCircle2 size={16} className="text-accent flex-shrink-0" />
-                                                <span className="text-text-muted text-sm">{feature}</span>
+                                    <div className="mb-6 space-y-2 w-full pt-6 border-t border-white/5">
+                                        <p className="text-[11px] font-black text-neon-cyan/80 uppercase tracking-widest">
+                                            Cible : <span className="text-white normal-case font-medium">{service.cible}</span>
+                                        </p>
+                                    </div>
+
+                                    <div className="space-y-4 mb-12 w-full">
+                                        {service.features.map((feature, fIndex) => (
+                                            <div key={fIndex} className="flex items-start space-x-3 text-[10px] lg:text-xs font-black text-slate-400 tracking-[0.1em] lg:tracking-[0.15em] leading-relaxed">
+                                                <CheckCircle2 size={16} className="text-neon-cyan shrink-0 mt-0.5" />
+                                                <span className="normal-case">{feature}</span>
                                             </div>
                                         ))}
                                     </div>
 
-                                    {/* Footer */}
-                                    <div className="flex items-center justify-between pt-6 border-t border-white/5">
-                                        <div>
-                                            <p className="text-text-muted text-xs uppercase tracking-wider mb-1">Prix</p>
-                                            <p className="text-2xl font-bold text-text-primary">{service.price}</p>
+                                    <div className="mt-auto w-full flex items-center justify-between">
+                                        <div className="space-y-1">
+                                            <p className="text-[10px] font-black text-slate-500 tracking-widest uppercase">Investissement</p>
+                                            <p className="text-3xl font-black text-white tracking-tighter">{service.price}</p>
                                         </div>
-                                        <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white transition-all duration-500">
-                                            <ArrowUpRight size={20} />
+                                        <div className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-neon-pink group-hover:text-white group-hover:border-neon-pink transition-all duration-500">
+                                            <ArrowUpRight size={24} />
                                         </div>
                                     </div>
                                 </div>

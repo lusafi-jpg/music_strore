@@ -21,7 +21,9 @@ const FloatingParticles = ({ density = 40 }) => { // Augmenté à 40 particules
     }, [density]);
 
     // Générer des particules avec propriétés optimisées
-    const particles = useMemo(() => {
+    const [particles, setParticles] = useState([]);
+
+    useEffect(() => {
         const particleTypes = [
             { icon: Circle, color: 'text-brand-primary/30' },
             { icon: Mic, color: 'text-brand-secondary/30' },
@@ -31,7 +33,8 @@ const FloatingParticles = ({ density = 40 }) => { // Augmenté à 40 particules
             { icon: Volume2, color: 'text-brand-primary/30' }
         ];
 
-        return Array.from({ length: actualDensity }, (_, index) => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setParticles(Array.from({ length: actualDensity }, (_, index) => {
             const type = particleTypes[index % particleTypes.length];
             const IconComponent = type.icon;
 
@@ -46,7 +49,7 @@ const FloatingParticles = ({ density = 40 }) => { // Augmenté à 40 particules
                 opacity: Math.random() * 0.4 + 0.3, // Augmenté : 0.3 à 0.7 au lieu de 0.05 à 0.2
                 rotation: Math.random() * 360
             };
-        });
+        }));
     }, [actualDensity]);
 
     if (!isVisible) return null;
