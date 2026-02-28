@@ -1,34 +1,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Globe, Palette, Megaphone, ArrowRight, Sparkles } from 'lucide-react';
+import { Music, TrendingUp, Palette, ArrowRight, Sparkles } from 'lucide-react';
 import { FloatingParticles } from '../../../components/common';
 import { DESIGN_SYSTEM } from '../../../config/design-system';
 
 const GetStarted = () => {
     const navigate = useNavigate();
 
-    const options = [
+    const poles = [
         {
-            title: "Distribuer une musique",
-            desc: "Single, EP ou Album. Partout dans le monde.",
-            icon: <Globe size={40} />,
-            gradient: "from-blue-500 to-indigo-600",
-            route: "/service/vibe-drop"
+            title: "🎼 Distribution",
+            subtitle: "PÔLE DISTRIBUTION",
+            desc: "Mise en ligne, monétisation et protection mondiale de votre musique.",
+            icon: <Music size={40} />,
+            gradient: "from-brand-primary to-brand-secondary",
+            route: "/services#distribution",
+            packages: ["Vibe-Drop 29$", "Vibe-Master 69$", "Vibe-Flux 15$/mois"]
         },
         {
-            title: "Créer une pochette",
-            desc: "Identité visuelle pro et impactante.",
+            title: "📈 Growth",
+            subtitle: "PÔLE GROWTH",
+            desc: "Marketing stratégique, visibilité et développement d'audience.",
+            icon: <TrendingUp size={40} />,
+            gradient: "from-brand-secondary to-brand-tertiary",
+            route: "/services#growth",
+            packages: ["Vibe-Boost 49$", "Vibe-Impact 129$", "Vibe-Momentum 89$/mois"]
+        },
+        {
+            title: "🎨 Création",
+            subtitle: "PÔLE CRÉATION",
+            desc: "Identité visuelle, contenus professionnels et présence digitale.",
             icon: <Palette size={40} />,
-            gradient: "from-rose-500 to-pink-600",
-            route: "/service/vibe-master"
-        },
-        {
-            title: "Promouvoir une musique",
-            desc: "Gagnez des fans et des streams.",
-            icon: <Megaphone size={40} />,
-            gradient: "from-violet-500 to-purple-600",
-            route: "/service/vibe-flash"
+            gradient: "from-brand-tertiary to-brand-quaternary",
+            route: "/services#creation",
+            packages: ["Vibe-Start 39$", "Vibe-Brand 179$", "Vibe-Identity 79$/mois"]
         }
     ];
 
@@ -71,29 +77,51 @@ const GetStarted = () => {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-12">
-                    {options.map((opt, idx) => (
+                    {poles.map((pole, idx) => (
                         <motion.button
                             key={idx}
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 + (idx * 0.1) }}
                             whileHover={{ y: -10 }}
-                            onClick={() => navigate(opt.route)}
+                            onClick={() => navigate(pole.route)}
                             className="group relative card-pro text-left flex flex-col items-start h-full border-none cursor-pointer"
                         >
-                            <div className={`mb-10 w-24 h-24 rounded-3xl bg-gradient-to-br ${opt.gradient} flex items-center justify-center text-white shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6`}>
-                                {opt.icon}
+                            <div className="mb-4">
+                                <div className="text-xs font-black tracking-[0.3em] text-text-secondary uppercase mb-2">
+                                    {pole.subtitle}
+                                </div>
+                                <div className={`w-24 h-24 rounded-3xl bg-gradient-to-br ${pole.gradient} flex items-center justify-center text-white shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6`}>
+                                    {pole.icon}
+                                </div>
                             </div>
 
-                            <h2 className="text-3xl font-black mb-6 text-text-primary leading-tight uppercase italic">
-                                {opt.title}
+                            <h2 className="text-3xl font-black mb-4 text-text-primary leading-tight uppercase italic">
+                                {pole.title}
                             </h2>
-                            <p className="text-text-secondary font-bold normal-case mb-12 flex-grow leading-relaxed">
-                                {opt.desc}
+                            <p className="text-text-secondary font-bold normal-case mb-6 flex-grow leading-relaxed">
+                                {pole.desc}
                             </p>
 
+                            {/* Packages Preview */}
+                            <div className="w-full mb-8">
+                                <div className="text-xs font-black tracking-[0.3em] text-text-secondary uppercase mb-3">
+                                    Forfaits populaires
+                                </div>
+                                <div className="space-y-2">
+                                    {pole.packages.map((pkg, pkgIdx) => (
+                                        <div key={pkgIdx} className="flex items-center justify-between text-sm">
+                                            <span className="text-text-secondary">{pkg.split(' ')[0]}</span>
+                                            <span className={`font-bold text-transparent bg-clip-text bg-gradient-to-r ${pole.gradient}`}>
+                                                {pkg.split(' ')[1]}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
                             <div className="w-full flex items-center justify-between pt-8 border-t border-white/5">
-                                <span className="text-[10px] font-black tracking-[0.3em] text-text-muted">Suivant</span>
+                                <span className="text-[10px] font-black tracking-[0.3em] text-text-muted">Explorer</span>
                                 <div className="w-12 h-12 rounded-2xl bg-dark-surface/5 border border-brand-primary/20 flex items-center justify-center transition-all duration-300 group-hover:bg-brand-primary group-hover:text-text-primary">
                                     <ArrowRight size={24} />
                                 </div>

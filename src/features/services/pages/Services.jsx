@@ -4,7 +4,7 @@ import { FloatingParticles } from '../../../components/common';
 import { DESIGN_SYSTEM } from '../../../config/design-system';
 
 // Components imports (will be created soon)
-import { ServicesHero, PreparationSection, MonetizationSection, GrowthSection, EcosystemSection, PacksSection, CTASection } from '../components';
+import { ServicesHero, DiagnosticSection, SolutionsSection, ProofsSection, ActionSection, PreparationSection, GrowthSection, EcosystemSection, PacksSection, CTASection, PolesSection } from '../components';
 
 const ServicesPage = () => {
     return (
@@ -12,32 +12,22 @@ const ServicesPage = () => {
             <ServicesHero />
 
             <div className="relative">
-                <PreparationSection />
+                <DiagnosticSection />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.LOW} />
+            </div>
+
+            <div className="relative">
+                <SolutionsSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
             <div className="relative">
-                <MonetizationSection />
-                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
+                <ProofsSection />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.LOW} />
             </div>
 
             <div className="relative">
-                <GrowthSection />
-                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
-            </div>
-
-            <div className="relative">
-                <EcosystemSection />
-                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
-            </div>
-
-            <div className="relative">
-                <PacksSection />
-                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
-            </div>
-
-            <div className="relative border-t border-white/5 bg-gradient-to-b from-dark-bg to-[#0a0a0a]">
-                <CTASection />
+                <ActionSection />
             </div>
         </div>
     );

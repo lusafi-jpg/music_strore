@@ -7,24 +7,24 @@ const PacksSection = () => {
     const packs = [
         {
             name: "Vibe-Drop",
-            description: "Pour lancer votre premier single proprement.",
-            price: "À partir de 39$",
+            description: "Distribution mondiale + monétisation automatique.",
+            price: "29$",
             gradient: "from-[#00f2fe] to-[#4facfe]",
             route: "/service/vibe-drop",
             popular: false
         },
         {
             name: "Vibe-Master",
-            description: "Pour les artistes qui veulent une image professionnelle.",
-            price: "À partir de 89$",
+            description: "Distribution prioritaire + badges vérifiés.",
+            price: "69$",
             gradient: "from-[#a18cd1] to-[#fbc2eb]",
             route: "/service/vibe-master",
             popular: true
         },
         {
             name: "Vibe-Flash",
-            description: "Pour créer un impact fort et protéger vos revenus.",
-            price: "À partir de 129$",
+            description: "Distribution premium + traitement accéléré.",
+            price: "99$",
             gradient: "from-[#ff9a9e] to-[#fecfef]",
             route: "/service/vibe-flash",
             popular: false

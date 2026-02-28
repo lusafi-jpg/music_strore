@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Hero, Stats, FAQ, FeaturedArtists, Pricing, MusicPlatforms, Partnership } from '../index';
 import { FloatingParticles } from '../../../components/common';
 import { DESIGN_SYSTEM } from '../../../config/design-system';
+import { MonetizationSection, GrowthSection, EcosystemSection } from '../../services/components';
 
 export default function Home() {
     useEffect(() => {
@@ -49,6 +50,21 @@ export default function Home() {
 
             <div className="relative">
                 <FeaturedArtists />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
+            </div>
+
+            <div className="relative">
+                <MonetizationSection />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
+            </div>
+
+            <div className="relative">
+                <GrowthSection />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
+            </div>
+
+            <div className="relative">
+                <EcosystemSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
