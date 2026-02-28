@@ -71,25 +71,25 @@ Avant de commencer votre post-production :
 ## 💰 Tarifs et Formules
 
 ### Montage Essentiel (Contenu simple)
-- **Prix** : 75,000 FCFA
+- **Prix** : 100$
 - **Durée** : 2-3 min, rushes propres
 - **Inclus** : Montage basique, export standard
 - **Idéal pour** : Vidéos corporate, témoignages
 
 ### Montage Professionnel (Contenu créatif)
-- **Prix** : 200,000 FCFA
+- **Prix** : 250$
 - **Durée** : 3-5 min, étalonnage couleur
 - **Inclus** : Tout Essentiel + color grading, effets
 - **Idéal pour** : Clips musicaux, contenus artistiques
 
 ### Montage Premium (Production complexe)
-- **Prix** : 450,000 FCFA
+- **Prix** : 500$
 - **Durée** : 5-10 min, effets avancés
 - **Inclus** : Tout Professionnel + VFX, animation 3D
 - **Idéal pour** : Productions cinématographiques
 
 ### Montage VIP (Ultra-complexe)
-- **Prix** : 900,000 FCFA +
+- **Prix** : 1,000$ +
 - **Durée** : 10+ min, post-prod complète
 - **Inclus** : Tout Premium + équipe spécialisée
 - **Idéal pour** : Films courts, documentaires

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Globe, Palette, Megaphone, ArrowRight, Sparkles } from 'lucide-react';
 import { FloatingParticles } from '../../../components/common';
+import { DESIGN_SYSTEM } from '../../../config/design-system';
 
 const GetStarted = () => {
     const navigate = useNavigate();
@@ -13,28 +14,28 @@ const GetStarted = () => {
             desc: "Single, EP ou Album. Partout dans le monde.",
             icon: <Globe size={40} />,
             gradient: "from-blue-500 to-indigo-600",
-            route: "/service/distribution-single"
+            route: "/service/vibe-drop"
         },
         {
             title: "Créer une pochette",
             desc: "Identité visuelle pro et impactante.",
             icon: <Palette size={40} />,
             gradient: "from-rose-500 to-pink-600",
-            route: "/service/cover-art"
+            route: "/service/vibe-master"
         },
         {
             title: "Promouvoir une musique",
             desc: "Gagnez des fans et des streams.",
             icon: <Megaphone size={40} />,
             gradient: "from-violet-500 to-purple-600",
-            route: "/service/promotion"
+            route: "/service/vibe-flash"
         }
     ];
 
     return (
         <div className="min-h-screen pt-40 pb-20 bg-dark-bg uppercase overflow-hidden relative">
             {/* Particules flottantes */}
-            <FloatingParticles density={25} />
+            <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
 
             {/* Decorative background elements */}
             <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10">

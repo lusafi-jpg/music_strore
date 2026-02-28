@@ -82,44 +82,29 @@ Sélectionnez selon vos objectifs :
 
 ## 💰 Tarifs et Formules
 
-### Promotion Essentielle (Débutant)
-- **Prix** : 50,000 FCFA
+### Promotion Essentielle (Vibe-Drop)
+- **Prix** : Inclus dans Vibe-Drop (39$)
 - **Durée** : 30 jours
-- **Inclus** :
-  - Campagne Spotify/Deezer
-  - 5 posts sponsorisés
-  - Suivi basique
-- **Résultats attendus** : +500-2000 streams
+- **Inclus** : Campagne de base sur réseaux sociaux
+- **Idéal pour** : Premiers pas en promotion
 
-### Promotion Intensive (Intermédiaire)
-- **Prix** : 150,000 FCFA
+### Promotion Intensive (Vibe-Master)
+- **Prix** : Inclus dans Vibe-Master (89$)
 - **Durée** : 60 jours
-- **Inclus** :
-  - Campagnes multi-plateformes
-  - 15 posts sponsorisés
-  - Playlist pitching
-  - Suivi avancé
-- **Résultats attendus** : +2000-8000 streams
+- **Inclus** : Campagnes multi-plateformes, analytics avancés
+- **Idéal pour** : Croissance régulière
 
-### Promotion Premium (Professionnel)
-- **Prix** : 350,000 FCFA
+### Promotion Premium (Vibe-Flash)
+- **Prix** : Inclus dans Vibe-Flash (129$)
 - **Durée** : 90 jours
-- **Inclus** :
-  - Stratégie complète
-  - 30 posts sponsorisés
-  - Influencers partnerships
-  - A/B testing avancé
-- **Résultats attendus** : +5000-20000 streams
+- **Inclus** : Manager dédié, promotion prioritaire, analytics temps réel
+- **Idéal pour** : Impact maximum
 
-### Promotion VIP (Artiste établi)
-- **Prix** : 750,000 FCFA
-- **Durée** : 90 jours
-- **Inclus** :
-  - Tout Premium +
-  - Manager dédié
-  - Relations presse
-  - Analytics premium
-- **Résultats attendus** : +15000-50000 streams
+### Promotion VIP (Vibe-Flux)
+- **Prix** : Inclus dans Vibe-Flux (15$/mois)
+- **Durée** : Continue (abonnement)
+- **Inclus** : Accompagnement stratégique permanent
+- **Idéal pour** : Artistes réguliers
 
 ## 🎯 Stratégies de promotion détaillées
 

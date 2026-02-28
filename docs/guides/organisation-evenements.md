@@ -71,25 +71,25 @@ Avant de planifier votre événement :
 ## 💰 Tarifs et Formules
 
 ### Événement Essentiel (Intime)
-- **Prix** : 300,000 FCFA
+- **Prix** : 200$
 - **Capacité** : 50-100 personnes
 - **Inclus** : Lieu, sono basique, promotion digitale
 - **Idéal pour** : Showcase acoustique, lancement EP
 
 ### Événement Professionnel (Moyen)
-- **Prix** : 750,000 FCFA
+- **Prix** : 500$
 - **Capacité** : 100-300 personnes
 - **Inclus** : Tout Essentiel + éclairage, captation vidéo
 - **Idéal pour** : Release party, showcase professionnel
 
 ### Événement Premium (Complet)
-- **Prix** : 1,500,000 FCFA
+- **Prix** : 1,000$
 - **Capacité** : 300-500 personnes
 - **Inclus** : Tout Professionnel + catering, sécurité, DJ
 - **Idéal pour** : Lancement album, événement signature
 
 ### Événement VIP (Prestige)
-- **Prix** : 3,000,000 FCFA +
+- **Prix** : 2,000$ +
 - **Capacité** : 500-1000+ personnes
 - **Inclus** : Tout Premium + production complète, invités VIP
 - **Idéal pour** : Événements majeurs, tournées

@@ -105,21 +105,29 @@ Remplissez soigneusement :
 
 ## 💰 Tarifs et Formules
 
-### Distribution Standard
-- **Prix** : 25,000 FCFA par titre
-- **Inclus** : 150+ plateformes, métadonnées complètes
-- **Durée** : Distribution perpétuelle
-- **Royalties** : 85% reversés à l'artiste
+### Vibe-Drop (Débutant)
+- **Prix** : 39$
+- **Inclus** : Distribution sur 30+ plateformes, analytiques de base, support 48h
+- **Idéal pour** : Premier single, artiste débutant
+- **Limite** : 1 titre par mois
 
-### Distribution Premium
-- **Prix** : 45,000 FCFA par titre
-- **Inclus** : Tout Standard + promotion initiale
-- **Bonus** : Campagne de lancement sur réseaux sociaux
-- **Support** : Accompagnement personnalisé
+### Vibe-Master (Professionnel)
+- **Prix** : 89$
+- **Inclus** : Distribution sur 150+ plateformes, analytiques avancées, support 24h, mastering IA
+- **Idéal pour** : Artistes établis, sorties régulières
+- **Avantages** : Splits, artwork creator, sorties illimitées
 
-### Distribution Album (Remise)
-- **À partir de 150,000 FCFA** pour 10 titres
-- **Remise** : -20% sur le total
+### Vibe-Flash (Premium)
+- **Prix** : 129$
+- **Inclus** : Tout Vibe-Master + gestion multi-artistes, manager dédié, promotion prioritaire
+- **Idéal pour** : Labels, artistes professionnels
+- **Revenus** : Partage 90/10, analytics temps réel
+
+### Vibe-Flux (Abonnement)
+- **Prix** : 15$/mois
+- **Inclus** : Sorties illimitées, accompagnement stratégique, communauté d'élite
+- **Idéal pour** : Artistes réguliers, grinders
+- **Avantages** : Chaîne YouTube officielle, ateliers experts
 
 ## ⏱️ Délais de traitement
 

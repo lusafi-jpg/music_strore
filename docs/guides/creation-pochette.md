@@ -77,27 +77,29 @@ Avant de commencer, préparez-vous :
 
 ## 💰 Tarifs et Formules
 
-### Pochette Standard
-- **Prix** : 75,000 FCFA
-- **Inclus** : 3 propositions, 2 révisions, tous formats
+### Pochette Essentielle (Basique)
+- **Prix** : Inclus dans Vibe-Master (89$)
+- **Inclus** : Outil Artwork Creator Pro, templates professionnels
+- **Idéal pour** : Artistes Vibe-Master avec besoins simples
+- **Délai** : Immédiat (outil intégré)
+
+### Pochette Professionnelle (Design sur mesure)
+- **Prix** : 50$ supplémentaire
+- **Inclus** : Designer dédié, 3 propositions, 2 révisions
+- **Idéal pour** : Artistes souhaitant un design unique
 - **Délai** : 5-7 jours ouvrés
-- **Designer** : Confirmé (3-5 ans d'expérience)
 
-### Pochette Premium
-- **Prix** : 150,000 FCFA
-- **Inclus** : Tout Standard + designer expert, sources incluses
+### Pochette Premium (Haute qualité)
+- **Prix** : 100$ supplémentaire
+- **Inclus** : Directeur artistique, sources incluses, usage commercial
+- **Idéal pour** : Artistes professionnels, labels
 - **Délai** : 3-5 jours ouvrés
-- **Bonus** : Conseils stratégiques pour votre branding
 
-### Pochette VIP (Artiste confirmé)
-- **Prix** : 300,000 FCFA
-- **Inclus** : Tout Premium + directeur artistique dédié
-- **Délai** : 2-3 jours ouvrés
-- **Service** : Accompagnement personnalisé illimité
-
-### Forfaits spéciaux
-- **Pack Album complet** : Pochette + artwork intérieur (-20%)
-- **Identité visuelle** : Pochette + logo + bannières (-30%)
+### Identité Visuelle Complète
+- **Prix** : À partir de 150$
+- **Inclus** : Pochette + logo + bannières + signatures
+- **Idéal pour** : Artistes en développement de marque
+- **Délai** : 7-10 jours ouvrés
 
 ## 🎨 Styles de design disponibles
 
@@ -156,7 +158,7 @@ Avant de commencer, préparez-vous :
 - Derniers détails et polissage
 
 ### Révisions supplémentaires
-- **Prix** : 25,000 FCFA par révision
+- **Prix** : 50$ par révision
 - **Délai** : 24-48h supplémentaires
 
 ## 📊 Suivi du projet

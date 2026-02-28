@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { servicesData } from '../../../data/services.jsx';
 import { ArrowLeft, CheckCircle2, MessageSquare, ExternalLink } from 'lucide-react';
 import { FloatingParticles } from '../../../components/common';
+import { DESIGN_SYSTEM } from '../../../config/design-system';
 
 const ServiceDetail = () => {
     const { id } = useParams();
@@ -21,7 +22,7 @@ const ServiceDetail = () => {
     return (
         <div className="pt-32 pb-20 bg-gradient-to-br from-[#000] via-[#1c1e1f]/30 to-[#000] min-h-screen relative overflow-hidden">
             {/* Particules flottantes */}
-            <FloatingParticles density={30} />
+            <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
 
             {/* Background highlights with Vibrato spectrum */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-brand-primary/20 via-brand-secondary/10 to-brand-tertiary/5 blur-[150px] -mr-32 -mt-32 -z-10 rounded-full"></div>

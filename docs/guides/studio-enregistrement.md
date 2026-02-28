@@ -83,28 +83,28 @@ Avant votre session d'enregistrement :
 ## 💰 Tarifs et Formules
 
 ### Session Essentielle (2h)
-- **Prix** : 50,000 FCFA
+- **Prix** : 75$
 - **Inclus** : Studio, ingénieur, micros de base
 - **Idéal pour** : Démo, voix seule, petit projet
 
 ### Session Standard (4h)
-- **Prix** : 85,000 FCFA
+- **Prix** : 125$
 - **Inclus** : Tout Essentielle + instruments studio
 - **Idéal pour** : Single complet, featuring
 
 ### Session Intensive (8h)
-- **Prix** : 150,000 FCFA
+- **Prix** : 200$
 - **Inclus** : Tout Standard + assistant, pauses repas
 - **Idéal pour** : EP, sessions collaboratives
 
 ### Session Journée (12h)
-- **Prix** : 250,000 FCFA
+- **Prix** : 350$
 - **Inclus** : Tout Intensive + déjeuner offert
 - **Idéal pour** : Album tracks, productions complexes
 
 ### Forfaits spéciaux
-- **Pack Album** : 10 sessions 4h = 700,000 FCFA (-20%)
-- **Résident artiste** : Semaine complète = 1,200,000 FCFA
+- **Pack Album** : 10 sessions 4h = 1,000$ (-20%)
+- **Résident artiste** : Semaine complète = 1,500$
 - **Studio Live** : +50% pour enregistrement orchestral
 
 ## 🎛️ Équipements disponibles

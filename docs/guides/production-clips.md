@@ -65,25 +65,25 @@ Avant de lancer votre projet vidéo :
 ## 💰 Tarifs et Formules
 
 ### Clip Essentiel (Débutant)
-- **Prix** : 500,000 FCFA
+- **Prix** : 400$
 - **Durée** : 2-3 min, tournage 1 jour
 - **Inclus** : Réalisateur, caméra 4K, montage basique
 - **Idéal pour** : Premier clip, budget limité
 
 ### Clip Professionnel (Intermédiaire)
-- **Prix** : 1,200,000 FCFA
+- **Prix** : 800$
 - **Durée** : 3-4 min, tournage 2 jours
 - **Inclus** : Tout Essentiel + drone, éclairage cinéma, étalonnage
 - **Idéal pour** : Artiste établi, diffusion large
 
 ### Clip Premium (Artistique)
-- **Prix** : 2,500,000 FCFA
+- **Prix** : 1,500$
 - **Durée** : 4-5 min, tournage 2-3 jours
 - **Inclus** : Tout Professionnel + effets spéciaux, post-prod avancée
 - **Idéal pour** : Production cinématographique
 
 ### Clip VIP (Événementiel)
-- **Prix** : 5,000,000 FCFA +
+- **Prix** : 3,000$ +
 - **Durée** : 5+ min, tournage personnalisé
 - **Inclus** : Tout Premium + équipe complète, locations premium
 - **Idéal pour** : Lancement album, tournée

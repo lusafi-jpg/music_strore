@@ -71,25 +71,25 @@ Avant votre session podcast/interview :
 ## 💰 Tarifs et Formules
 
 ### Session Essentielle (Simple)
-- **Prix** : 50,000 FCFA
+- **Prix** : 75$
 - **Durée** : 30-60 min, 1-2 personnes
 - **Inclus** : Studio, ingénieur, montage basique
 - **Idéal pour** : Interview simple, podcast court
 
 ### Session Professionnelle (Standard)
-- **Prix** : 120,000 FCFA
+- **Prix** : 150$
 - **Durée** : 60-90 min, 2-4 personnes
 - **Inclus** : Tout Essentiel + mixage professionnel
 - **Idéal pour** : Émission complète, débat
 
 ### Session Premium (Complète)
-- **Prix** : 250,000 FCFA
+- **Prix** : 300$
 - **Durée** : 90-120 min, groupe complet
 - **Inclus** : Tout Professionnel + mastering, artwork
 - **Idéal pour** : Production podcast professionnelle
 
 ### Session VIP (Haute qualité)
-- **Prix** : 500,000 FCFA +
+- **Prix** : 600$ +
 - **Durée** : 120+ min, production complète
 - **Inclus** : Tout Premium + animateur, stratégie diffusion
 - **Idéal pour** : Série podcast, émissions spéciales

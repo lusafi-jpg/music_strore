@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Hero, Stats, FAQ, FeaturedArtists, Pricing, MusicPlatforms, Partnership } from '../index';
 import { FloatingParticles } from '../../../components/common';
+import { DESIGN_SYSTEM } from '../../../config/design-system';
 
 export default function Home() {
     useEffect(() => {
@@ -43,22 +44,22 @@ export default function Home() {
 
             <div className="relative">
                 <Stats />
-                <FloatingParticles density={35} />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
             <div className="relative">
                 <FeaturedArtists />
-                <FloatingParticles density={35} />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
             <div className="relative">
                 <Pricing />
-                <FloatingParticles density={35} />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
             <section id="faq" className="relative">
                 <FAQ />
-                <FloatingParticles density={35} />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </section>
 
             <Partnership />
