@@ -28,7 +28,7 @@ const Navbar = () => {
                             className="flex items-center justify-center"
                         >
                             <img
-                                src="/img/LOGO-removebg-preview.png"
+                                src="/img/logo-vibrato.png"
                                 alt="Vibrato Logo"
                                 className="h-8 sm:h-10 w-auto object-contain"
                             />

@@ -61,11 +61,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center mt-12 opacity-20 hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[8px] font-black tracking-[0.5em] uppercase italic text-slate-500">
-                    lusafi
-                </span>
-            </div>
         </footer>
     );
 };

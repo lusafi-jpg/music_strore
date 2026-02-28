@@ -57,7 +57,7 @@ const FloatingParticles = ({ density = 40 }) => { // Augmenté à 40 particules
     return (
         <div
             ref={containerRef}
-            className="absolute inset-0 pointer-events-none overflow-hidden z-0"
+            className="absolute inset-0 pointer-events-none overflow-hidden z-10"
             style={{ contain: 'layout style paint' }} // Optimisation CSS
         >
             {particles.map((particle) => {
