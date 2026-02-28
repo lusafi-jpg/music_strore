@@ -141,7 +141,6 @@ const FeaturedArtists = () => {
                     className="text-center mb-20"
                 >
                     <div className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-full text-text-primary text-sm font-medium mb-6">
-                        <TrendingUp size={16} />
                         <span>Le Complexe Vibrato 360°</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6">
@@ -218,12 +217,7 @@ const FeaturedArtists = () => {
 
                                             {/* Content */}
                                             <div className="relative z-10 p-8 flex flex-col h-full flex-grow">
-                                                {/* Icon */}
-                                                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${tool.gradient} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-500`}>
-                                                    <div className="text-text-primary">
-                                                        {tool.icon}
-                                                    </div>
-                                                </div>
+
 
                                                 {/* Title */}
                                                 <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-primary group-hover:to-brand-quaternary transition-all duration-500">
@@ -238,9 +232,6 @@ const FeaturedArtists = () => {
                                                 {/* Arrow */}
                                                 <div className="flex items-center space-x-2 text-brand-primary group-hover:text-brand-quaternary transition-colors duration-500">
                                                     <span className="text-sm font-medium uppercase tracking-wider">Découvrir</span>
-                                                    <div className="w-8 h-8 rounded-lg bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center group-hover:bg-brand-quaternary/10 group-hover:border-brand-quaternary/30 transition-all duration-500">
-                                                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -275,9 +266,7 @@ const FeaturedArtists = () => {
                     className="text-center"
                 >
                     <div className="inline-flex items-center space-x-6 px-8 py-4 bg-gradient-to-r from-brand-primary via-brand-quaternary to-brand-quinary rounded-2xl shadow-2xl shadow-brand-primary/20">
-                        <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                            <Zap size={24} className="text-white" />
-                        </div>
+
                         <div className="text-left">
                             <p className="text-white font-bold text-lg">Réservez vos sessions dès maintenant</p>
                             <p className="text-white/80 text-sm">Tournage, enregistrement, événementiel...</p>

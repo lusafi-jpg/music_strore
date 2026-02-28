@@ -5,6 +5,8 @@ import FAQ from '../components/FAQ';
 import FeaturedArtists from '../components/FeaturedArtists';
 import Pricing from '../components/Pricing';
 import FloatingParticles from '../components/FloatingParticles';
+import MusicPlatforms from '../components/MusicPlatforms';
+import Partnership from '../components/Partnership';
 
 export default function Home() {
     useEffect(() => {
@@ -42,7 +44,7 @@ export default function Home() {
         <div className="bg-dark-bg min-h-screen">
             <div className="relative">
                 <Hero />
-                {/* Pas de particules dans le hero */}
+                <MusicPlatforms />
             </div>
 
             <div className="relative">
@@ -64,6 +66,8 @@ export default function Home() {
                 <FAQ />
                 <FloatingParticles density={35} />
             </section>
+
+            <Partnership />
         </div>
     );
 }

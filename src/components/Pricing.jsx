@@ -20,7 +20,7 @@ const Pricing = () => {
             gradient: "from-brand-primary to-brand-secondary",
             popular: false,
             delay: 0,
-            link: "/pack/vibe-drop"
+            link: "/service/vibe-drop"
         },
         {
             name: "Vibe-Master",
@@ -39,7 +39,7 @@ const Pricing = () => {
             gradient: "from-brand-secondary to-brand-tertiary",
             popular: true,
             delay: 0.1,
-            link: "/pack/vibe-master"
+            link: "/service/vibe-master"
         },
         {
             name: "Vibe-Flash",
@@ -59,7 +59,7 @@ const Pricing = () => {
             gradient: "from-brand-tertiary to-brand-quaternary",
             popular: false,
             delay: 0.2,
-            link: "/pack/vibe-flash"
+            link: "/service/vibe-flash"
         },
         {
             name: "Vibe-Flux",
@@ -75,12 +75,12 @@ const Pricing = () => {
             gradient: "from-brand-quaternary to-brand-quinary",
             popular: false,
             delay: 0.3,
-            link: "/pack/vibe-flux"
+            link: "/service/vibe-flux"
         }
     ];
 
     return (
-        <section className="py-32 bg-gradient-to-br from-[#000] via-[#1c1e1f]/30 to-[#000] relative overflow-hidden">
+        <section id="service" className="py-32 bg-gradient-to-br from-[#000] via-[#1c1e1f]/30 to-[#000] relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-brand-primary/10 via-brand-secondary/5 to-transparent blur-3xl rounded-full"></div>

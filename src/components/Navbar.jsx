@@ -37,8 +37,8 @@ const Navbar = () => {
                 <div className="hidden md:flex items-center space-x-16 md:ml-12">
                     <nav className="flex items-center space-x-12">
                         <NavLink to="/" label="Accueil" />
-                        <NavLink to="/services" label="Services" />
-                        <a href="/#faq" className="hover:text-neon-pink transition-colors font-black uppercase text-[10px] tracking-[0.3em] no-underline text-slate-400">Faq</a>
+                        <NavLink to="/#service" label="Services" />
+                        <NavLink to="/#faq" label="Faq" />
                     </nav>
 
                     <Link to="/start" className="no-underline">
@@ -72,8 +72,8 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col space-y-8 uppercase">
                             <MobileNavLink to="/" label="Accueil" onClick={() => setIsOpen(false)} />
-                            <Link to="/services" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Services</Link>
-                            <a href="/#faq" className="text-4xl font-black tracking-tighter text-white no-underline" onClick={() => setIsOpen(false)}>Faq</a>
+                            <MobileNavLink to="/#service" label="Services" onClick={() => setIsOpen(false)} />
+                            <MobileNavLink to="/#faq" label="Faq" onClick={() => setIsOpen(false)} />
                         </div>
                         <Link to="/start" className="no-underline" onClick={() => setIsOpen(false)}>
                             <button className="w-full py-6 rounded-3xl bg-neon-pink text-white font-black text-xl uppercase tracking-widest shadow-xl shadow-neon-pink/20">

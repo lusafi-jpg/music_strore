@@ -13,12 +13,12 @@ const ServicesHero = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-                <div className="grid lg:grid-cols-12 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="lg:col-span-8 space-y-8"
+                        className="space-y-8"
                     >
                         <div className="inline-flex items-center space-x-2 px-4 py-2 bg-dark-surface/50 border border-brand-primary/20 backdrop-blur-xl rounded-full text-text-secondary text-[10px] font-black uppercase tracking-[0.3em]">
                             <Sparkles size={14} className="text-brand-quaternary" />
@@ -56,6 +56,21 @@ const ServicesHero = () => {
                                     Voir nos Packs
                                 </motion.button>
                             </a>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                        className="relative hidden lg:block"
+                    >
+                        <div className="aspect-square relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl shadow-brand-primary/20">
+                            <img
+                                src="/img/164997925-un-homme-noir-étonné-dans-des-écouteurs-sans-fil-pointant-vers-un-smartphone-dans-ses-mains-un.jpg"
+                                alt="Services Vibrato"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/40 to-transparent"></div>
                         </div>
                     </motion.div>
                 </div>

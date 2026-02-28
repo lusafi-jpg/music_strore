@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Youtube, Instagram, Smartphone, Check, TrendingUp } from 'lucide-react';
+import { Youtube, Instagram, Smartphone, Check } from 'lucide-react';
 
 const MonetizationSection = () => {
     return (
@@ -33,8 +33,19 @@ const MonetizationSection = () => {
                                 transition={{ delay: 0.1 }}
                                 className="flex space-x-6 group"
                             >
-                                <div className="w-14 h-14 rounded-2xl bg-[#FF0000]/10 border border-[#FF0000]/20 flex items-center justify-center shrink-0 group-hover:bg-[#FF0000]/20 transition-colors">
-                                    <Youtube className="text-[#FF0000]" size={28} />
+                                <div className="relative shrink-0">
+                                    <motion.div
+                                        animate={{ rotate: 360 }}
+                                        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                                        className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-[#FF0000]/20 to-transparent blur-sm"
+                                    />
+                                    <div className="w-14 h-14 rounded-2xl bg-[#FF0000]/10 border border-[#FF0000]/20 flex items-center justify-center relative z-10 group-hover:bg-[#FF0000]/20 transition-colors">
+                                        <motion.div
+                                            whileHover={{ scale: 1.2, rotate: 12 }}
+                                        >
+                                            <Youtube className="text-[#FF0000]" size={28} />
+                                        </motion.div>
+                                    </div>
                                 </div>
                                 <div className="space-y-3">
                                     <h3 className="text-xl font-black uppercase text-white tracking-widest">YouTube & Content ID</h3>
@@ -55,8 +66,22 @@ const MonetizationSection = () => {
                                 transition={{ delay: 0.2 }}
                                 className="flex space-x-6 group"
                             >
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center shrink-0 opacity-80 group-hover:opacity-100 transition-opacity">
-                                    <Instagram className="text-white" size={28} />
+                                <div className="relative shrink-0">
+                                    <motion.div
+                                        animate={{
+                                            scale: [1, 1.1, 1],
+                                            opacity: [0.2, 0.4, 0.2]
+                                        }}
+                                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                        className="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-[#f09433] to-[#bc1888] blur-md"
+                                    />
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center relative z-10 opacity-90 group-hover:opacity-100 transition-opacity">
+                                        <motion.div
+                                            whileHover={{ scale: 1.2, rotate: -12 }}
+                                        >
+                                            <Instagram className="text-white" size={28} />
+                                        </motion.div>
+                                    </div>
                                 </div>
                                 <div className="space-y-3">
                                     <h3 className="text-xl font-black uppercase text-white tracking-widest">Instagram / Facebook</h3>
@@ -76,8 +101,23 @@ const MonetizationSection = () => {
                                 transition={{ delay: 0.3 }}
                                 className="flex space-x-6 group"
                             >
-                                <div className="w-14 h-14 rounded-2xl bg-[#00f2fe]/10 border border-[#00f2fe]/20 flex items-center justify-center shrink-0 group-hover:bg-[#00f2fe]/20 transition-colors">
-                                    <Smartphone className="text-[#00f2fe]" size={28} />
+                                <div className="relative shrink-0">
+                                    <motion.div
+                                        animate={{
+                                            x: [-2, 2, -2],
+                                            y: [-2, 2, -2]
+                                        }}
+                                        transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        className="absolute -inset-2 rounded-2xl bg-[#00f2fe]/10 blur-sm"
+                                    />
+                                    <div className="w-14 h-14 rounded-2xl bg-[#00f2fe]/10 border border-[#00f2fe]/20 flex items-center justify-center relative z-10 group-hover:bg-[#00f2fe]/20 transition-colors">
+                                        <motion.div
+                                            animate={{ y: [0, -4, 0] }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                        >
+                                            <Smartphone className="text-[#00f2fe]" size={28} />
+                                        </motion.div>
+                                    </div>
                                 </div>
                                 <div className="space-y-3">
                                     <h3 className="text-xl font-black uppercase text-white tracking-widest">TikTok & Plateformes Virales</h3>
@@ -100,23 +140,28 @@ const MonetizationSection = () => {
                     >
                         <div className="absolute -inset-4 bg-gradient-to-tr from-brand-secondary/20 to-brand-quaternary/20 blur-3xl -z-10 rounded-full"></div>
                         <div className="card-pro border border-white/10 p-10 bg-dark-bg/60 backdrop-blur-2xl rounded-[3rem] shadow-2xl overflow-hidden aspect-square flex flex-col justify-center relative">
-                            {/* Decorative visual representing data/money flow */}
-                            <div className="absolute top-10 right-10 opacity-10">
-                                <TrendingUp size={200} className="text-brand-secondary" />
+                            <div className="absolute inset-0 z-0">
+                                <img
+                                    src="/img/stock-artist.jpg"
+                                    alt="Background"
+                                    className="w-full h-full object-cover opacity-60"
+                                />
+                                <div className="absolute inset-0 bg-dark-bg/60 backdrop-blur-sm"></div>
                             </div>
+                            <div className="relative z-10">
+                                <h4 className="text-3xl font-black uppercase italic tracking-tighter text-white mb-2">Des revenus partout</h4>
+                                <p className="text-slate-400 font-bold mb-8">Plus de 30 plateformes génèrent des royalties pour votre catalogue.</p>
 
-                            <h4 className="text-3xl font-black uppercase italic tracking-tighter text-white mb-2">Des revenus partout</h4>
-                            <p className="text-slate-400 font-bold mb-8">Plus de 30 plateformes génèrent des royalties pour votre catalogue.</p>
-
-                            <div className="space-y-4">
-                                <div className="h-4 bg-white/5 rounded-full overflow-hidden w-3/4">
-                                    <div className="h-full bg-gradient-to-r from-brand-secondary to-brand-tertiary w-[80%]"></div>
-                                </div>
-                                <div className="h-4 bg-white/5 rounded-full overflow-hidden w-2/3">
-                                    <div className="h-full bg-gradient-to-r from-brand-tertiary to-brand-quaternary w-[65%]"></div>
-                                </div>
-                                <div className="h-4 bg-white/5 rounded-full overflow-hidden w-1/2">
-                                    <div className="h-full bg-gradient-to-r from-brand-quaternary to-brand-quinary w-[40%]"></div>
+                                <div className="space-y-4">
+                                    <div className="h-4 bg-white/5 rounded-full overflow-hidden w-3/4">
+                                        <div className="h-full bg-gradient-to-r from-brand-secondary to-brand-tertiary w-[80%]"></div>
+                                    </div>
+                                    <div className="h-4 bg-white/5 rounded-full overflow-hidden w-2/3">
+                                        <div className="h-full bg-gradient-to-r from-brand-tertiary to-brand-quaternary w-[65%]"></div>
+                                    </div>
+                                    <div className="h-4 bg-white/5 rounded-full overflow-hidden w-1/2">
+                                        <div className="h-full bg-gradient-to-r from-brand-quaternary to-brand-quinary w-[40%]"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
