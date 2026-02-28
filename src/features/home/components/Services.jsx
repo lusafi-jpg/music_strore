@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { servicesData } from '../data/services.jsx';
+import { servicesData } from '../../../data/services.jsx';
 import { CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 const Services = () => {

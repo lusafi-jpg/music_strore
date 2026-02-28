@@ -1,15 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import FloatingParticles from '../components/FloatingParticles';
+import { FloatingParticles } from '../../../components/common';
 
 // Components imports (will be created soon)
-import ServicesHero from '../components/services/ServicesHero';
-import PreparationSection from '../components/services/PreparationSection';
-import MonetizationSection from '../components/services/MonetizationSection';
-import GrowthSection from '../components/services/GrowthSection';
-import EcosystemSection from '../components/services/EcosystemSection';
-import PacksSection from '../components/services/PacksSection';
-import CTASection from '../components/services/CTASection';
+import { ServicesHero, PreparationSection, MonetizationSection, GrowthSection, EcosystemSection, PacksSection, CTASection } from '../components';
 
 const ServicesPage = () => {
     return (

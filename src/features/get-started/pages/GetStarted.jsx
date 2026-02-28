@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Globe, Palette, Megaphone, ArrowRight, Sparkles } from 'lucide-react';
-import FloatingParticles from '../components/FloatingParticles';
+import { FloatingParticles } from '../../../components/common';
 
 const GetStarted = () => {
     const navigate = useNavigate();

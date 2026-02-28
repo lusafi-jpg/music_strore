@@ -1,12 +1,11 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import ScrollToTop from './components/ScrollToTop';
-import Home from './pages/Home';
-import ServiceDetail from './pages/ServiceDetail';
-import GetStarted from './pages/GetStarted';
-import ServicesPage from './pages/Services';
-import Footer from './components/Footer';
+import { Navbar } from './components/layout';
+import { ScrollToTop } from './components/common';
+import { Home } from './features/home';
+import { ServiceDetail, Services as ServicesPage } from './features/services';
+import { GetStarted } from './features/get-started';
+import { Footer } from './components/layout';
 
 export default function App() {
   return (

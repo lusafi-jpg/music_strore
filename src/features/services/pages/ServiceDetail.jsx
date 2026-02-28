@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
-import { servicesData } from '../data/services.jsx';
+import { servicesData } from '../../../data/services.jsx';
 import { ArrowLeft, CheckCircle2, MessageSquare, ExternalLink } from 'lucide-react';
-import FloatingParticles from '../components/FloatingParticles';
+import { FloatingParticles } from '../../../components/common';
 
 const ServiceDetail = () => {
     const { id } = useParams();
@@ -82,7 +82,18 @@ const ServiceDetail = () => {
                                 <MessageSquare size={16} className="sm:size-20 relative z-10" />
                                 <span className="text-xs sm:text-sm relative z-10">Commander</span>
                             </motion.a>
-                            <button className="inline-flex items-center justify-center space-x-2 sm:space-x-4 px-4 sm:px-12 py-3 sm:py-6 rounded-xl sm:rounded-3xl bg-dark-surface/50 backdrop-blur-xl border border-brand-primary/30 text-text-primary font-black uppercase tracking-widest hover:bg-brand-primary/10 hover:border-brand-quaternary/50 transition-all duration-500 cursor-pointer text-xs sm:text-sm relative overflow-hidden group">
+                            <button onClick={() => {
+                                const url = window.location.href;
+                                navigator.share?.({
+                                    title: service.title,
+                                    text: service.description,
+                                    url: url
+                                }).catch(() => {
+                                    // Fallback: copy to clipboard
+                                    navigator.clipboard.writeText(url);
+                                    // You might want to add a toast notification here
+                                });
+                            }} className="inline-flex items-center justify-center space-x-2 sm:space-x-4 px-4 sm:px-12 py-3 sm:py-6 rounded-xl sm:rounded-3xl bg-dark-surface/50 backdrop-blur-xl border border-brand-primary/30 text-text-primary font-black uppercase tracking-widest hover:bg-brand-primary/10 hover:border-brand-quaternary/50 transition-all duration-500 cursor-pointer text-xs sm:text-sm relative overflow-hidden group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-brand-quaternary/10 to-brand-quinary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <ExternalLink size={16} className="sm:size-20 relative z-10" />
                                 <span className="text-xs sm:text-sm relative z-10">Partager</span>

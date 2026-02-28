@@ -1,12 +1,6 @@
 import React, { useEffect } from 'react';
-import Hero from '../components/Hero';
-import Stats from '../components/Stats';
-import FAQ from '../components/FAQ';
-import FeaturedArtists from '../components/FeaturedArtists';
-import Pricing from '../components/Pricing';
-import FloatingParticles from '../components/FloatingParticles';
-import MusicPlatforms from '../components/MusicPlatforms';
-import Partnership from '../components/Partnership';
+import { Hero, Stats, FAQ, FeaturedArtists, Pricing, MusicPlatforms, Partnership } from '../index';
+import { FloatingParticles } from '../../../components/common';
 
 export default function Home() {
     useEffect(() => {
