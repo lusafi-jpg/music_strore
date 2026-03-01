@@ -259,7 +259,15 @@ const ServiceDetail = () => {
                                     >
                                         <CheckCircle2 className="text-accent sm:size-18" size={14} />
                                     </motion.div>
-                                    <span className="flex-grow leading-relaxed group-hover:text-accent transition-colors duration-300">{feature}</span>
+                                    <div className="flex items-start space-x-3 flex-grow">
+                                        <motion.div
+                                            whileHover={{ scale: 1.1, rotate: 5 }}
+                                            className="w-4 h-4 flex items-center justify-center text-accent/70 flex-shrink-0 mt-0.5"
+                                        >
+                                            {feature.icon}
+                                        </motion.div>
+                                        <span className="flex-grow leading-relaxed group-hover:text-accent transition-colors duration-300">{feature.text}</span>
+                                    </div>
                                 </motion.li>
                             ))}
                         </ul>

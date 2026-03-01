@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, Zap, Crown, Star } from 'lucide-react';
+import { Check, ArrowRight, Zap, Crown, Star, CheckCircle2, Clock, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { EcosystemSection } from '../features/services';
 
@@ -376,6 +376,194 @@ const PricingPage = () => {
                     className="relative py-24"
                 >
                     <EcosystemSection />
+                </motion.div>
+
+                {/* Process Steps */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mb-16"
+                >
+                    <h3 className="text-2xl md:text-3xl font-black text-center text-white mb-12">
+                        Notre Processus Simple
+                    </h3>
+
+                    <div className="grid md:grid-cols-4 gap-6">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0 * 0.1 }}
+                            className="relative p-6 rounded-2xl border transition-all duration-300 bg-gradient-to-br from-brand-quaternary/20 to-brand-primary/20 border-brand-quaternary/30"
+                        >
+                            {/* Step Number */}
+                            <div className="inline-flex items-center justify-center w-8 h-8 rounded-full font-black text-sm mb-4 bg-gradient-to-r from-brand-quaternary to-brand-primary text-white">
+                                01
+                            </div>
+
+                            {/* Icon */}
+                            <div className="inline-flex p-2 rounded-lg mb-4 bg-brand-quaternary/20 text-brand-quaternary">
+                                <CheckCircle2 size={20} />
+                            </div>
+
+                            {/* Content */}
+                            <h4 className="text-lg font-bold text-white mb-2">
+                                Brief Créatif
+                            </h4>
+                            <p className="text-text-secondary text-sm leading-relaxed">
+                                On analyse votre musique et vos objectifs ensemble
+                            </p>
+
+                            {/* Connection Line */}
+                            <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-brand-quaternary/50 to-transparent"></div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 1 * 0.1 }}
+                            className="relative p-6 rounded-2xl border transition-all duration-300 bg-gradient-to-br from-brand-quaternary/20 to-brand-primary/20 border-brand-quaternary/30"
+                        >
+                            {/* Step Number */}
+                            <div className="inline-flex items-center justify-center w-8 h-8 rounded-full font-black text-sm mb-4 bg-gradient-to-r from-brand-quaternary to-brand-primary text-white">
+                                02
+                            </div>
+
+                            {/* Icon */}
+                            <div className="inline-flex p-2 rounded-lg mb-4 bg-brand-quaternary/20 text-brand-quaternary">
+                                <CheckCircle2 size={20} />
+                            </div>
+
+                            {/* Content */}
+                            <h4 className="text-lg font-bold text-white mb-2">
+                                Devis Personnalisé
+                            </h4>
+                            <p className="text-text-secondary text-sm leading-relaxed">
+                                Proposition sur mesure selon votre profil
+                            </p>
+
+                            {/* Connection Line */}
+                            <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-brand-quaternary/50 to-transparent"></div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 2 * 0.1 }}
+                            className="relative p-6 rounded-2xl border transition-all duration-300 bg-dark-surface/40 border-white/5"
+                        >
+                            {/* Step Number */}
+                            <div className="inline-flex items-center justify-center w-8 h-8 rounded-full font-black text-sm mb-4 bg-white/10 text-text-secondary">
+                                03
+                            </div>
+
+                            {/* Icon */}
+                            <div className="inline-flex p-2 rounded-lg mb-4 bg-white/10 text-text-secondary">
+                                <Clock size={20} />
+                            </div>
+
+                            {/* Content */}
+                            <h4 className="text-lg font-bold text-white mb-2">
+                                Lancement Projet
+                            </h4>
+                            <p className="text-text-secondary text-sm leading-relaxed">
+                                Mise en route sous 24-48h après validation
+                            </p>
+
+                            {/* Connection Line */}
+                            <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-brand-quaternary/50 to-transparent"></div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 3 * 0.1 }}
+                            className="relative p-6 rounded-2xl border transition-all duration-300 bg-dark-surface/40 border-white/5"
+                        >
+                            {/* Step Number */}
+                            <div className="inline-flex items-center justify-center w-8 h-8 rounded-full font-black text-sm mb-4 bg-white/10 text-text-secondary">
+                                04
+                            </div>
+
+                            {/* Icon */}
+                            <div className="inline-flex p-2 rounded-lg mb-4 bg-white/10 text-text-secondary">
+                                <Sparkles size={20} />
+                            </div>
+
+                            {/* Content */}
+                            <h4 className="text-lg font-bold text-white mb-2">
+                                Suivi & Résultats
+                            </h4>
+                            <p className="text-text-secondary text-sm leading-relaxed">
+                                Rapports hebdomadaires et optimisation continue
+                            </p>
+                        </motion.div>
+                    </div>
+                </motion.div>
+
+                {/* Final CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center bg-gradient-to-r from-dark-surface/60 via-dark-surface/40 to-dark-surface/60 backdrop-blur-xl rounded-[2rem] p-8 md:p-12 border border-white/10 mb-16"
+                >
+                    <div className="max-w-2xl mx-auto">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-brand-quinary to-brand-primary rounded-full mb-6">
+                            <Sparkles size={32} className="text-white" />
+                        </div>
+
+                        <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
+                            Votre Succès Commence Aujourd'hui
+                        </h3>
+
+                        <p className="text-text-secondary mb-8 leading-relaxed">
+                            Ne laissez plus votre musique dormir dans vos dossiers. Avec Vibrato, transformez votre talent en carrière rentable.
+                            <strong className="text-white"> Premier contact gratuit et sans engagement.</strong>
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link to="/start" className="no-underline">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="px-8 py-4 bg-gradient-to-r from-brand-primary via-brand-quinary to-brand-secondary text-white font-black uppercase tracking-widest text-sm flex items-center justify-center space-x-3 rounded-xl shadow-2xl shadow-brand-primary/20 hover:shadow-brand-primary/40 transition-shadow"
+                                >
+                                    <Sparkles size={18} />
+                                    <span>Commencer Mon Projet</span>
+                                    <ArrowRight size={18} />
+                                </motion.button>
+                            </Link>
+
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                className="px-8 py-4 bg-white/10 border border-white/20 text-white font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-colors rounded-xl"
+                            >
+                                Refaire le Diagnostic
+                            </motion.button>
+                        </div>
+
+                        <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-text-secondary">
+                            <div className="flex items-center space-x-1">
+                                <CheckCircle2 size={12} className="text-brand-quaternary" />
+                                <span>Sans engagement</span>
+                            </div>
+                            <div className="flex items-center space-x-1">
+                                <CheckCircle2 size={12} className="text-brand-quaternary" />
+                                <span>Devis gratuit</span>
+                            </div>
+                            <div className="flex items-center space-x-1">
+                                <CheckCircle2 size={12} className="text-brand-quaternary" />
+                                <span>Lancement sous 24h</span>
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Bottom Info */}

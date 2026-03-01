@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rocket, Star, Zap, Infinity as InfinityIcon } from 'lucide-react';
+import { Package, Music, DollarSign, Globe, Handshake, CheckCircle2, Video, Lock, Tag, BarChart3, Smartphone, LifeBuoy, Crown, Target, Bot, Star as StarIcon, Phone, Rocket as RocketIcon } from 'lucide-react';
 
 export const servicesData = [
     {
@@ -12,19 +13,19 @@ export const servicesData = [
         color: "cyan",
         cible: "L'artiste qui lance son premier single.",
         features: [
-            "📦 1 projet gratuit par an",
-            "🎵 Maximum 2 titres inclus par projet",
-            "💰 Dépassement: 7$ par projet supplémentaire",
-            "🌍 Distribution sur 150+ plateformes digitales",
-            "💰 Monétisation automatique activée",
-            "🤝 Répartition auto des revenus",
-            "✅ Badge artiste vérifié Spotify & Apple Music",
-            "🎥 Chaîne Artiste Officielle YouTube (OAC)",
-            "🔒 YouTube Content ID activé",
-            "🏷️ Utilisation de vos propres codes ISRC",
-            "📊 Rapports de vente détaillés",
-            "📱 Sorties illimitées sur réseaux sociaux",
-            "🛟 Support client sous 72h"
+            { icon: <Package size={16} />, text: "1 projet gratuit par an" },
+            { icon: <Music size={16} />, text: "Maximum 2 titres inclus par projet" },
+            { icon: <DollarSign size={16} />, text: "Dépassement: 7$ par projet supplémentaire" },
+            { icon: <Globe size={16} />, text: "Distribution sur 150+ plateformes digitales" },
+            { icon: <DollarSign size={16} />, text: "Monétisation automatique activée" },
+            { icon: <Handshake size={16} />, text: "Répartition auto des revenus" },
+            { icon: <CheckCircle2 size={16} />, text: "Badge artiste vérifié Spotify & Apple Music" },
+            { icon: <Video size={16} />, text: "Chaîne Artiste Officielle YouTube (OAC)" },
+            { icon: <Lock size={16} />, text: "YouTube Content ID activé" },
+            { icon: <Tag size={16} />, text: "Utilisation de vos propres codes ISRC" },
+            { icon: <BarChart3 size={16} />, text: "Rapports de vente détaillés" },
+            { icon: <Smartphone size={16} />, text: "Sorties illimitées sur réseaux sociaux" },
+            { icon: <LifeBuoy size={16} />, text: "Support client sous 72h" }
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Drop. Je souhaite sortir mon premier projet et poser ma marque.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -38,16 +39,16 @@ export const servicesData = [
         color: "purple",
         cible: "L'artiste qui veut une image 'Carrée' et gérer ses droits comme un pro.",
         features: [
-            "📦 3 projets gratuits par an",
-            "🎵 Maximum 3 titres inclus par projet",
-            "💰 Dépassement: 7$ par projet supplémentaire",
-            "🌍 Tout le Vibe-Drop inclus",
-            "⚡ Gestion prioritaire des mises en ligne",
-            "📱 Sorties illimitées sur TikTok, IG, FB & YouTube",
-            "✅ Badges de vérification Spotify & Apple Music",
-            "🏢 Splits (Répartition auto) + Nom de Label personnalisé",
-            "🎨 Outils de création de pochettes d'album pro",
-            "🛟 Assistance prioritaire (réponse sous 48h)"
+            { icon: <Package size={16} />, text: "3 projets gratuits par an" },
+            { icon: <Music size={16} />, text: "Maximum 3 titres inclus par projet" },
+            { icon: <DollarSign size={16} />, text: "Dépassement: 7$ par projet supplémentaire" },
+            { icon: <Globe size={16} />, text: "Tout le Vibe-Drop inclus" },
+            { icon: <Zap size={16} />, text: "Gestion prioritaire des mises en ligne" },
+            { icon: <Smartphone size={16} />, text: "Sorties illimitées sur TikTok, IG, FB & YouTube" },
+            { icon: <CheckCircle2 size={16} />, text: "Badges de vérification Spotify & Apple Music" },
+            { icon: <Package size={16} />, text: "Splits (Répartition auto) + Nom de Label personnalisé" },
+            { icon: <Video size={16} />, text: "Outils de création de pochettes d'album pro" },
+            { icon: <LifeBuoy size={16} />, text: "Assistance prioritaire (réponse sous 48h)" }
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Master. Je souhaite gérer mes droits comme un pro et avoir une image carrée.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -61,16 +62,16 @@ export const servicesData = [
         color: "pink",
         cible: "L'artiste en plein buzz qui veut saturer le marché et protéger ses revenus.",
         features: [
-            "📦 5 projets gratuits par an",
-            "🎵 Maximum 5 titres inclus par projet",
-            "💰 Dépassement: 7$ par projet supplémentaire",
-            "🌍 Tout le Vibe-Master inclus",
-            "⚡ Priorité élevée et traitement accéléré",
-            "📊 Rapports quotidiens des tendances",
-            "🔒 YouTube Content ID pour protection",
-            "🎯 Opportunités exclusives (Pitching, Ambassadeurs, Twitch)",
-            "🎵 Codes UPC personnalisés + Restrictions géographiques",
-            "👑 Support VIP (réponse sous 24h)"
+            { icon: <Package size={16} />, text: "5 projets gratuits par an" },
+            { icon: <Music size={16} />, text: "Maximum 5 titres inclus par projet" },
+            { icon: <DollarSign size={16} />, text: "Dépassement: 7$ par projet supplémentaire" },
+            { icon: <Globe size={16} />, text: "Tout le Vibe-Master inclus" },
+            { icon: <Zap size={16} />, text: "Priorité élevée et traitement accéléré" },
+            { icon: <BarChart3 size={16} />, text: "Rapports quotidiens des tendances" },
+            { icon: <Lock size={16} />, text: "YouTube Content ID pour protection" },
+            { icon: <Target size={16} />, text: "Opportunités exclusives (Pitching, Ambassadeurs, Twitch)" },
+            { icon: <Music size={16} />, text: "Codes UPC personnalisés + Restrictions géographiques" },
+            { icon: <Crown size={16} />, text: "Support VIP (réponse sous 24h)" }
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Flash. Je veux maximer ma visibilité et protéger mes revenus.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -84,18 +85,18 @@ export const servicesData = [
         color: "yellow",
         cible: "Le 'Grinder' qui sort un son par mois et veut faire partie d'une communauté d'élite.",
         features: [
-            "📦 3 projets gratuits par mois",
-            "🎵 Maximum 4 titres inclus par projet",
-            "💰 Dépassement: 7$ par projet supplémentaire",
-            "🌍 Tous les services des autres formules",
-            "♾️ Sorties illimitées - Ne payez plus par morceau",
-            "🎥 Création de votre Chaîne d'Artiste Officielle (OAC) YouTube",
-            "🤝 Accès aux Ateliers experts et Conférences privées",
-            "🤖 Automatisation complète vers nouveaux magasins mondiaux",
-            "⭐ Avantages exclusifs pour artistes en vedette",
-            "🎵 Accès au lieu d'enregistrement Vibrato",
-            "📞 Gestion continue adaptée aux artistes actifs",
-            "🚀 Annulation à tout moment"
+            { icon: <Package size={16} />, text: "3 projets gratuits par mois" },
+            { icon: <Music size={16} />, text: "Maximum 4 titres inclus par projet" },
+            { icon: <DollarSign size={16} />, text: "Dépassement: 7$ par projet supplémentaire" },
+            { icon: <Globe size={16} />, text: "Tous les services des autres formules" },
+            { icon: <InfinityIcon size={16} />, text: "Sorties illimitées - Ne payez plus par morceau" },
+            { icon: <Video size={16} />, text: "Création de votre Chaîne d'Artiste Officielle (OAC) YouTube" },
+            { icon: <Handshake size={16} />, text: "Accès aux Ateliers experts et Conférences privées" },
+            { icon: <Bot size={16} />, text: "Automatisation complète vers nouveaux magasins mondiaux" },
+            { icon: <StarIcon size={16} />, text: "Avantages exclusifs pour artistes en vedette" },
+            { icon: <Music size={16} />, text: "Accès au lieu d'enregistrement Vibrato" },
+            { icon: <Phone size={16} />, text: "Gestion continue adaptée aux artistes actifs" },
+            { icon: <RocketIcon size={16} />, text: "Annulation à tout moment" }
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite souscrire à l'abonnement Vibe-Flux pour des sorties illimitées et rejoindre votre communauté.\n\nMerci de m'indiquer la marche à suivre."
     }
