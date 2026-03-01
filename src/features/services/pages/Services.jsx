@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { FloatingParticles } from '../../../components/common';
 import { DESIGN_SYSTEM } from '../../../config/design-system';
 
-// Components imports (will be created soon)
-import { ServicesHero, DiagnosticSection, SolutionsSection, ProofsSection, ActionSection, PreparationSection, GrowthSection, EcosystemSection, PacksSection, CTASection, PolesSection } from '../components';
+// Components imports
+import { ServicesHero, DiagnosticSection, SolutionsSection, ProofsSection, ActionSection } from '../components';
 
 const ServicesPage = () => {
     return (
@@ -16,17 +16,17 @@ const ServicesPage = () => {
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.LOW} />
             </div>
 
-            <div className="relative">
+            <div id="distribution" className="relative">
                 <SolutionsSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
-            <div className="relative">
+            <div id="growth" className="relative">
                 <ProofsSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.LOW} />
             </div>
 
-            <div className="relative">
+            <div id="creation" className="relative">
                 <ActionSection />
             </div>
         </div>

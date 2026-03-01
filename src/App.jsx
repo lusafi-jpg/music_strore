@@ -7,6 +7,7 @@ import { ServiceDetail, Services as ServicesPage } from './features/services';
 import { GetStarted } from './features/get-started';
 import { Footer } from './components/layout';
 import ErrorBoundary from './components/common/ErrorBoundary';
+import PricingPage from './pages/Pricing';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<ServicesPage />} />
+              <Route path="/pricing" element={<PricingPage />} />
               <Route path="/start" element={<GetStarted />} />
               <Route path="/service/:id" element={<ServiceDetail />} />
             </Routes>

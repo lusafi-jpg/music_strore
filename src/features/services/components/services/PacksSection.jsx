@@ -7,27 +7,53 @@ const PacksSection = () => {
     const packs = [
         {
             name: "Vibe-Drop",
-            description: "Distribution mondiale + monétisation automatique.",
+            description: "Pour lancer votre premier single proprement.",
             price: "29$",
             gradient: "from-[#00f2fe] to-[#4facfe]",
             route: "/service/vibe-drop",
-            popular: false
+            popular: false,
+            features: [
+                "Distribution sur 30+ plateformes",
+                "Analytiques de base",
+                "Support email 48h",
+                "1 single par mois",
+                "Codes ISRC/UPC inclus"
+            ]
         },
         {
             name: "Vibe-Master",
-            description: "Distribution prioritaire + badges vérifiés.",
+            description: "Pour les artistes qui veulent une image professionnelle.",
             price: "69$",
             gradient: "from-[#a18cd1] to-[#fbc2eb]",
             route: "/service/vibe-master",
-            popular: true
+            popular: true,
+            features: [
+                "Distribution sur 150+ plateformes",
+                "Analytiques avancées",
+                "Support prioritaire 24h",
+                "Illimité singles/albums",
+                "Outils Splits & Accelerator",
+                "Mastering IA inclus",
+                "Artwork Creator Pro"
+            ]
         },
         {
             name: "Vibe-Flash",
-            description: "Distribution premium + traitement accéléré.",
+            description: "Pour créer un impact fort et protéger vos revenus.",
             price: "99$",
             gradient: "from-[#ff9a9e] to-[#fecfef]",
             route: "/service/vibe-flash",
-            popular: false
+            popular: false,
+            features: [
+                "Tout le plan Vibe-Master",
+                "Gestion multi-artistes",
+                "API & intégrations",
+                "Manager dédié",
+                "White label possible",
+                "Revenus partagés 90/10",
+                "Analytics temps réel",
+                "Promotion prioritaire"
+            ]
         },
         {
             name: "Vibe-Flux",
@@ -35,7 +61,13 @@ const PacksSection = () => {
             price: "15$/mois",
             gradient: "from-[#fad0c4] to-[#ffd1ff]",
             route: "/service/vibe-flux",
-            popular: false
+            popular: false,
+            features: [
+                "Sorties illimitées",
+                "Accompagnement stratégique",
+                "Support dédié 24/7",
+                "Accès à la communauté"
+            ]
         }
     ];
 
@@ -90,6 +122,18 @@ const PacksSection = () => {
                                         <p className="text-slate-400 font-medium text-sm leading-relaxed mb-6">
                                             {pack.description}
                                         </p>
+
+                                        {/* Features List */}
+                                        <div className="flex-1 mb-6">
+                                            <ul className="space-y-2">
+                                                {pack.features.map((feature, featureIndex) => (
+                                                    <li key={featureIndex} className="flex items-start space-x-2 text-xs text-slate-400">
+                                                        <Check size={14} className="text-green-400 mt-0.5 flex-shrink-0" />
+                                                        <span>{feature}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
 
                                         <div className="mt-auto pt-6 border-t border-white/5 mb-8">
                                             <p className="text-2xl font-black text-white">{pack.price}</p>

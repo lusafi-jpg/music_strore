@@ -53,7 +53,7 @@ const Hero = () => {
 
                     <p className="text-lg text-slate-300 max-w-xl leading-relaxed font-medium">
                         Propulsez votre talent depuis le cœur de l'Afrique vers le monde entier.
-                        Distribution, Design et Promotion professionnelle pour les artistes indépendants.
+                        Distribuez votre musique partout, gardez 100% de vos droits et recevez vos paiements directement par Mobile Money.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center sm:justify-start">

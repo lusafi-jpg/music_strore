@@ -3,6 +3,7 @@ import { Hero, Stats, FAQ, FeaturedArtists, Pricing, MusicPlatforms, Partnership
 import { FloatingParticles } from '../../../components/common';
 import { DESIGN_SYSTEM } from '../../../config/design-system';
 import { MonetizationSection, GrowthSection, EcosystemSection } from '../../services/components';
+import GlobalDistributionSection from '../components/GlobalDistributionSection';
 
 export default function Home() {
     useEffect(() => {
@@ -54,17 +55,17 @@ export default function Home() {
             </div>
 
             <div className="relative">
+                <GlobalDistributionSection />
+                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
+            </div>
+
+            <div className="relative">
                 <MonetizationSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
             <div className="relative">
                 <GrowthSection />
-                <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
-            </div>
-
-            <div className="relative">
-                <EcosystemSection />
                 <FloatingParticles density={DESIGN_SYSTEM.PARTICLE_DENSITY.MEDIUM} />
             </div>
 
