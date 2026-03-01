@@ -16,10 +16,10 @@ const Pricing = () => {
                     period: "À partir de",
                     description: "Pour lancer votre premier single proprement.",
                     features: [
-                        "Distribution sur 30+ plateformes",
+                        "Distribution sur 150+ plateformes",
                         "Monétisation automatique",
                         "Support 72h",
-                        "1 projet/an - 2 titres max",
+                        "1 projet/an - 2 titres max free",
                         "Codes ISRC/UPC inclus"
                     ],
                     gradient: "from-brand-primary to-brand-secondary",
@@ -36,7 +36,7 @@ const Pricing = () => {
                         "Distribution sur 150+ plateformes",
                         "Badges artistes vérifiés",
                         "Support prioritaire 24h",
-                        "3 projets/an - 3 titres max",
+                        "3 projets/an - 3 titres max free",
                         "Réseaux sociaux + Splits revenus"
                     ],
                     gradient: "from-brand-secondary to-brand-tertiary",
@@ -50,10 +50,11 @@ const Pricing = () => {
                     period: "À partir de",
                     description: "Pour créer un impact fort et protéger vos revenus.",
                     features: [
+                        "Distribution sur 150+ plateformes",
                         "Tout le plan Vibe-Master",
                         "YouTube Content ID",
                         "Analyse tendance avancée",
-                        "5 projets/an - 5 titres max",
+                        "5 projets/an - 5 titres max free",
                         "Support VIP + Promotion"
                     ],
                     gradient: "from-brand-tertiary to-brand-quaternary",
@@ -67,8 +68,9 @@ const Pricing = () => {
                     period: "/mois",
                     description: "Sorties illimitées + accompagnement stratégique.",
                     features: [
+                        "Distribution sur 150+ plateformes",
                         "Sorties illimitées",
-                        "3 projets/mois - 4 titres max",
+                        "3 projets/mois - 4 titres max free",
                         "Automatisation complète",
                         "Communauté + Accompagnement",
                         "Annulation à tout moment"

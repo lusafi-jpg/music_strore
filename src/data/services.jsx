@@ -12,10 +12,19 @@ export const servicesData = [
         color: "cyan",
         cible: "L'artiste qui lance son premier single.",
         features: [
-            "Distribution : Plateformes mondiales + Date de sortie au choix.",
-            "Propreté : Utilisation de votre propre code ISRC (Traçabilité totale).",
-            "Suivi : Rapports de vente officiels.",
-            "Support : Assistance client (réponse sous 72h)."
+            "📦 1 projet gratuit par an",
+            "🎵 Maximum 2 titres inclus par projet",
+            "💰 Dépassement: 7$ par projet supplémentaire",
+            "🌍 Distribution sur 150+ plateformes digitales",
+            "💰 Monétisation automatique activée",
+            "🤝 Répartition auto des revenus",
+            "✅ Badge artiste vérifié Spotify & Apple Music",
+            "🎥 Chaîne Artiste Officielle YouTube (OAC)",
+            "🔒 YouTube Content ID activé",
+            "🏷️ Utilisation de vos propres codes ISRC",
+            "📊 Rapports de vente détaillés",
+            "📱 Sorties illimitées sur réseaux sociaux",
+            "🛟 Support client sous 72h"
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Drop. Je souhaite sortir mon premier projet et poser ma marque.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -29,12 +38,16 @@ export const servicesData = [
         color: "purple",
         cible: "L'artiste qui veut une image 'Carrée' et gérer ses droits comme un pro.",
         features: [
-            "Tout le Vibe-Drop",
-            "Social Power : Sorties illimitées sur TikTok, IG, FB & YouTube (20% frais).",
-            "Identité : Badges de vérification Spotify & Apple Music.",
-            "Entreprise : Splits (Répartition auto) + Nom de Label personnalisé.",
-            "Visuel : Outils de création de pochettes d'album pro.",
-            "Support : Assistance prioritaire (réponse sous 48h)."
+            "📦 3 projets gratuits par an",
+            "🎵 Maximum 3 titres inclus par projet",
+            "💰 Dépassement: 7$ par projet supplémentaire",
+            "🌍 Tout le Vibe-Drop inclus",
+            "⚡ Gestion prioritaire des mises en ligne",
+            "📱 Sorties illimitées sur TikTok, IG, FB & YouTube",
+            "✅ Badges de vérification Spotify & Apple Music",
+            "🏢 Splits (Répartition auto) + Nom de Label personnalisé",
+            "🎨 Outils de création de pochettes d'album pro",
+            "🛟 Assistance prioritaire (réponse sous 48h)"
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Master. Je souhaite gérer mes droits comme un pro et avoir une image carrée.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -48,12 +61,16 @@ export const servicesData = [
         color: "pink",
         cible: "L'artiste en plein buzz qui veut saturer le marché et protéger ses revenus.",
         features: [
-            "Tout le Vibe-Master",
-            "Données : Rapports quotidiens des tendances.",
-            "Protection : YouTube Content ID.",
-            "Promo : Opportunités exclusives (Pitching, Ambassadeurs, Twitch).",
-            "Technique : Codes UPC personnalisés + Restrictions géographiques.",
-            "Support : Assistance VIP (réponse sous 24h)."
+            "📦 5 projets gratuits par an",
+            "🎵 Maximum 5 titres inclus par projet",
+            "💰 Dépassement: 7$ par projet supplémentaire",
+            "🌍 Tout le Vibe-Master inclus",
+            "⚡ Priorité élevée et traitement accéléré",
+            "📊 Rapports quotidiens des tendances",
+            "🔒 YouTube Content ID pour protection",
+            "🎯 Opportunités exclusives (Pitching, Ambassadeurs, Twitch)",
+            "🎵 Codes UPC personnalisés + Restrictions géographiques",
+            "👑 Support VIP (réponse sous 24h)"
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe suis intéressé par l'offre Vibe-Flash. Je veux maximer ma visibilité et protéger mes revenus.\n\nMerci de m'indiquer la marche à suivre."
     },
@@ -67,11 +84,18 @@ export const servicesData = [
         color: "yellow",
         cible: "Le 'Grinder' qui sort un son par mois et veut faire partie d'une communauté d'élite.",
         features: [
-            "Sorties Illimitées : Ne paye plus à chaque morceau.",
-            "Visibilité : Création de ta Chaîne d'Artiste Officielle (OAC) sur YouTube.",
-            "Réseau : Accès aux Ateliers experts et Conférences privées.",
-            "Automator : Envoi automatique vers les nouveaux magasins mondiaux.",
-            "Avantages : Coût réduit pour les artistes en vedette + Accès au lieu d'enregistrement."
+            "📦 3 projets gratuits par mois",
+            "🎵 Maximum 4 titres inclus par projet",
+            "💰 Dépassement: 7$ par projet supplémentaire",
+            "🌍 Tous les services des autres formules",
+            "♾️ Sorties illimitées - Ne payez plus par morceau",
+            "🎥 Création de votre Chaîne d'Artiste Officielle (OAC) YouTube",
+            "🤝 Accès aux Ateliers experts et Conférences privées",
+            "🤖 Automatisation complète vers nouveaux magasins mondiaux",
+            "⭐ Avantages exclusifs pour artistes en vedette",
+            "🎵 Accès au lieu d'enregistrement Vibrato",
+            "📞 Gestion continue adaptée aux artistes actifs",
+            "🚀 Annulation à tout moment"
         ],
         whatsappMessage: "Bonjour Vibrato,\n\nJe souhaite souscrire à l'abonnement Vibe-Flux pour des sorties illimitées et rejoindre votre communauté.\n\nMerci de m'indiquer la marche à suivre."
     }
