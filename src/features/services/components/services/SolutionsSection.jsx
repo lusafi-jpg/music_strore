@@ -9,7 +9,7 @@ const SolutionsSection = () => {
     const solutions = [
         {
             id: 'first_single',
-            title: "🎵 Je veux sortir mon premier single",
+            title: "Je veux sortir mon premier single",
             subtitle: "DÉBUTANT",
             description: "Vous commencez votre aventure musicale et voulez une sortie professionnelle",
             icon: <Rocket size={32} />,
@@ -43,7 +43,7 @@ const SolutionsSection = () => {
         },
         {
             id: 'grow_audience',
-            title: "📈 Je veux développer mon audience",
+            title: "Je veux développer mon audience",
             subtitle: "EN DÉVELOPPEMENT",
             description: "Vous avez quelques sorties et voulez accroître votre visibilité",
             icon: <TrendingUp size={32} />,
@@ -77,7 +77,7 @@ const SolutionsSection = () => {
         },
         {
             id: 'professional_career',
-            title: "🏆 Je veux une carrière professionnelle",
+            title: "Je veux une carrière professionnelle",
             subtitle: "ÉTABLI",
             description: "Vous visez l'excellence et une carrière durable",
             icon: <Star size={32} />,
@@ -111,7 +111,7 @@ const SolutionsSection = () => {
         },
         {
             id: 'regular_publishing',
-            title: "🔄 Je publie régulièrement",
+            title: "Je publie régulièrement",
             subtitle: "TRÈS ACTIF",
             description: "Vous sortez fréquemment et voulez des processus automatisés",
             icon: <InfinityIcon size={32} />,

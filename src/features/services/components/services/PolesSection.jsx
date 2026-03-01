@@ -9,7 +9,7 @@ const PolesSection = () => {
         {
             id: 'distribution',
             title: 'Distribution',
-            subtitle: '🎼 PÔLE DISTRIBUTION',
+            subtitle: 'PÔLE DISTRIBUTION',
             description: 'Gestion technique des sorties musicales',
             icon: Music,
             color: 'from-brand-primary to-brand-secondary',
@@ -105,7 +105,7 @@ const PolesSection = () => {
         {
             id: 'growth',
             title: 'Growth',
-            subtitle: '📈 PÔLE GROWTH',
+            subtitle: 'PÔLE GROWTH',
             description: 'Marketing, publicité, playlists, performance',
             icon: TrendingUp,
             color: 'from-accent to-brand-quaternary',
@@ -117,7 +117,7 @@ const PolesSection = () => {
         {
             id: 'creation',
             title: 'Création',
-            subtitle: '🎨 PÔLE CRÉATION',
+            subtitle: 'PÔLE CRÉATION',
             description: 'Design, branding, contenus visuels',
             icon: Palette,
             color: 'from-brand-tertiary to-brand-quinary',
@@ -333,7 +333,7 @@ const PolesSection = () => {
                                 className="bg-gradient-to-br from-dark-surface/50 to-dark-card/50 rounded-3xl p-8 border border-accent/20"
                             >
                                 <h4 className="text-2xl font-black text-accent uppercase tracking-tight mb-8 text-center">
-                                    🔎 Règles Générales du Pôle Distribution
+                                    Règles Générales du Pôle Distribution
                                 </h4>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     {[

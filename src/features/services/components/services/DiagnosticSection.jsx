@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, ArrowRight, Users, Music, TrendingUp, Sparkles } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Users, Music, TrendingUp, Sparkles, Star, Trophy, Rocket, BarChart3, DollarSign, Target, Calendar, RotateCcw, Zap } from 'lucide-react';
 
 const DiagnosticSection = () => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -13,62 +13,66 @@ const DiagnosticSection = () => {
             id: 'experience',
             question: "Quelle est votre expérience musicale ?",
             options: [
-                { text: "Débutant (premier single)", value: "beginner", icon: "🎵" },
-                { text: "En développement (quelques sorties)", value: "developing", icon: "📈" },
-                { text: "Établi (carrière active)", value: "established", icon: "⭐" },
-                { text: "Professionnel (plusieurs albums)", value: "professional", icon: "🏆" }
+                { text: "Débutant (premier single)", value: "beginner", icon: <Music size={24} /> },
+                { text: "En développement (quelques sorties)", value: "developing", icon: <TrendingUp size={24} /> },
+                { text: "Établi (carrière active)", value: "established", icon: <Star size={24} /> },
+                { text: "Professionnel (plusieurs albums)", value: "professional", icon: <Trophy size={24} /> }
             ]
         },
         {
             id: 'goal',
             question: "Quel est votre objectif principal ?",
             options: [
-                { text: "Sortir mon premier titre", value: "first_release", icon: "🚀" },
-                { text: "Développer mon audience", value: "grow_audience", icon: "📊" },
-                { text: "Monétiser ma musique", value: "monetize", icon: "💰" },
-                { text: "Professionnaliser ma carrière", value: "professionalize", icon: "🎯" }
+                { text: "Sortir mon premier titre", value: "first_release", icon: <Rocket size={24} /> },
+                { text: "Développer mon audience", value: "grow_audience", icon: <BarChart3 size={24} /> },
+                { text: "Monétiser ma musique", value: "monetize", icon: <DollarSign size={24} /> },
+                { text: "Professionnaliser ma carrière", value: "professionalize", icon: <Target size={24} /> }
             ]
         },
         {
             id: 'frequency',
             question: "À quelle fréquence sortez-vous de la musique ?",
             options: [
-                { text: "Occasionnellement", value: "occasional", icon: "📅" },
-                { text: "Régulièrement (1-2/mois)", value: "regular", icon: "🔄" },
-                { text: "Très actif (hebdomadaire)", value: "very_active", icon: "⚡" },
-                { text: "Pas encore sorti", value: "none", icon: "🎵" }
+                { text: "Occasionnellement", value: "occasional", icon: <Calendar size={24} /> },
+                { text: "Régulièrement (1-2/mois)", value: "regular", icon: <RotateCcw size={24} /> },
+                { text: "Très actif (hebdomadaire)", value: "very_active", icon: <Zap size={24} /> },
+                { text: "Pas encore sorti", value: "none", icon: <Music size={24} /> }
             ]
         }
     ];
 
     const solutions = {
         beginner_first_release: {
-            title: "🎵 Débutant - Premier Single",
+            title: "Débutant - Premier Single",
             description: "Vous commencez votre aventure musicale",
             packages: ["Vibe-Drop (29$)", "Vibe-Start (39$)", "Vibe-Boost (49$)"],
             total: "117$",
-            route: "/start?profile=beginner"
+            route: "/start?profile=beginner",
+            icon: <Music size={20} />
         },
         developing_grow_audience: {
-            title: "📈 En Développement - Croissance Audience",
+            title: "En Développement - Croissance Audience",
             description: "Vous voulez développer votre visibilité",
             packages: ["Vibe-Master (69$)", "Vibe-Visual (89$)", "Vibe-Impact (129$)"],
             total: "287$",
-            route: "/start?profile=growing"
+            route: "/start?profile=growing",
+            icon: <TrendingUp size={20} />
         },
         established_monetize: {
-            title: "💰 Établi - Monétisation Maximale",
+            title: "Établi - Monétisation Maximale",
             description: "Vous voulez optimiser vos revenus",
             packages: ["Vibe-Flash (99$)", "Vibe-Brand (179$)", "Vibe-Explosion (249$)"],
             total: "527$",
-            route: "/start?profile=established"
+            route: "/start?profile=established",
+            icon: <DollarSign size={20} />
         },
         professional_professionalize: {
-            title: "🏆 Professionnel - Carrière Complète",
+            title: "Professionnel - Carrière Complète",
             description: "Vous visez l'excellence professionnelle",
             packages: ["Vibe-Flux (15$/mois)", "Vibe-Identity (79$/mois)", "Vibe-Momentum (89$/mois)"],
             total: "183$/mois",
-            route: "/start?profile=professional"
+            route: "/start?profile=professional",
+            icon: <Trophy size={20} />
         }
     };
 
@@ -162,7 +166,9 @@ const DiagnosticSection = () => {
                                             className="p-6 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-xl transition-all duration-300 text-left group"
                                         >
                                             <div className="flex items-center space-x-4">
-                                                <div className="text-3xl">{option.icon}</div>
+                                                <div className="text-brand-quaternary group-hover:scale-110 transition-transform">
+                                                    {option.icon}
+                                                </div>
                                                 <div>
                                                     <div className="text-white font-semibold text-lg">{option.text}</div>
                                                 </div>
@@ -181,7 +187,7 @@ const DiagnosticSection = () => {
                         >
                             <div className="text-center mb-8">
                                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-brand-quaternary to-brand-quinary rounded-full mb-6">
-                                    <CheckCircle2 size={32} className="text-white" />
+                                    {recommendedSolution.icon}
                                 </div>
                                 <h3 className="text-3xl md:text-4xl font-black text-white mb-4">
                                     {recommendedSolution.title}

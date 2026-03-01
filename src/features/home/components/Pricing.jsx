@@ -7,7 +7,7 @@ const Pricing = () => {
     const poleSections = [
         {
             id: "distribution",
-            title: "🎵 Pôle Distribution",
+            title: "Pôle Distribution",
             subtitle: "Distribution mondiale + monétisation",
             plans: [
                 {

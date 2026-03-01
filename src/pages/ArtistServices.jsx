@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import {
     Play, Users, Music, Video, Palette, Mic, Radio,
     Youtube, Instagram, Facebook, MonitorSpeaker, Trophy,
-    ArrowRight, CheckCircle2, Star, Sparkles, Zap, Globe
+    ArrowRight, CheckCircle2, Star, Sparkles, Zap, Globe,
+    Headphones, Tv, Smartphone, Camera, Users2, Cloud
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -140,14 +141,14 @@ const ArtistServices = () => {
     ];
 
     const platforms = [
-        { name: 'Spotify', icon: '🎵', color: 'text-green-400' },
-        { name: 'Apple Music', icon: '🍎', color: 'text-gray-300' },
-        { name: 'YouTube Music', icon: '📺', color: 'text-red-400' },
-        { name: 'Deezer', icon: '🎧', color: 'text-orange-400' },
-        { name: 'TikTok', icon: '🎬', color: 'text-pink-400' },
-        { name: 'Instagram', icon: '📸', color: 'text-purple-400' },
-        { name: 'Facebook', icon: '👥', color: 'text-blue-400' },
-        { name: 'SoundCloud', icon: '☁️', color: 'text-orange-500' }
+        { name: 'Spotify', icon: <Music size={24} />, color: 'text-green-400' },
+        { name: 'Apple Music', icon: <Headphones size={24} />, color: 'text-gray-300' },
+        { name: 'YouTube Music', icon: <Youtube size={24} />, color: 'text-red-400' },
+        { name: 'Deezer', icon: <Headphones size={24} />, color: 'text-orange-400' },
+        { name: 'TikTok', icon: <Camera size={24} />, color: 'text-pink-400' },
+        { name: 'Instagram', icon: <Instagram size={24} />, color: 'text-purple-400' },
+        { name: 'Facebook', icon: <Facebook size={24} />, color: 'text-blue-400' },
+        { name: 'SoundCloud', icon: <Cloud size={24} />, color: 'text-orange-500' }
     ];
 
     return (
@@ -307,7 +308,9 @@ const ArtistServices = () => {
                                 transition={{ delay: index * 0.1 }}
                                 className="flex flex-col items-center justify-center p-4 bg-dark-surface/40 backdrop-blur-sm rounded-xl border border-white/5 hover:border-white/20 transition-colors"
                             >
-                                <div className="text-2xl mb-2">{platform.icon}</div>
+                                <div className={`mb-2 ${platform.color}`}>
+                                    {platform.icon}
+                                </div>
                                 <span className="text-xs text-text-secondary font-medium">{platform.name}</span>
                             </motion.div>
                         ))}

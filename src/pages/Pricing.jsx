@@ -8,7 +8,7 @@ const PricingPage = () => {
     const poleSections = [
         {
             id: "distribution",
-            title: "🎵 Pôle Distribution",
+            title: "Pôle Distribution",
             subtitle: "Distribution mondiale + monétisation",
             plans: [
                 {
@@ -83,7 +83,7 @@ const PricingPage = () => {
         },
         {
             id: "creation",
-            title: "🎨 Pôle Création",
+            title: "Pôle Création",
             subtitle: "Identité & Visuels professionnels",
             plans: [
                 {
@@ -158,7 +158,7 @@ const PricingPage = () => {
         },
         {
             id: "growth",
-            title: "📈 Pôle Growth",
+            title: "Pôle Growth",
             subtitle: "Marketing & Performance mesurable",
             plans: [
                 {

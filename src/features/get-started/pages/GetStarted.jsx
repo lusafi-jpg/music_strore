@@ -10,7 +10,7 @@ const GetStarted = () => {
 
     const poles = [
         {
-            title: "🎼 Distribution",
+            title: "Distribution",
             subtitle: "PÔLE DISTRIBUTION",
             desc: "Mise en ligne, monétisation et protection mondiale de votre musique.",
             icon: <Music size={40} />,
@@ -19,7 +19,7 @@ const GetStarted = () => {
             packages: ["Vibe-Drop 29$", "Vibe-Master 69$", "Vibe-Flux 15$/mois"]
         },
         {
-            title: "📈 Growth",
+            title: "Growth",
             subtitle: "PÔLE GROWTH",
             desc: "Marketing stratégique, visibilité et développement d'audience.",
             icon: <TrendingUp size={40} />,
@@ -28,7 +28,7 @@ const GetStarted = () => {
             packages: ["Vibe-Boost 49$", "Vibe-Impact 129$", "Vibe-Momentum 89$/mois"]
         },
         {
-            title: "🎨 Création",
+            title: "Création",
             subtitle: "PÔLE CRÉATION",
             desc: "Identité visuelle, contenus professionnels et présence digitale.",
             icon: <Palette size={40} />,

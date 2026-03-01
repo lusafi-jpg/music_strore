@@ -127,7 +127,10 @@ const ServiceDetail = () => {
                                     transition={{ duration: 2, repeat: Infinity }}
                                     className="text-xl sm:text-3xl font-black text-text-muted tracking-tighter uppercase line-through opacity-50"
                                 >
-                                    $80+
+                                    {service.id === 'vibe-drop' ? '$99+' :
+                                     service.id === 'vibe-master' ? '$129+' :
+                                     service.id === 'vibe-flash' ? '$149+' :
+                                     service.id === 'vibe-flux' ? '$49/mois' : '$99+'}
                                 </motion.p>
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0 }}
@@ -136,8 +139,8 @@ const ServiceDetail = () => {
                                     className="relative"
                                 >
                                     <p className="text-2xl sm:text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-accent via-brand-quaternary to-brand-quinary tracking-tighter uppercase">
-                                        ${animatedPrice}
-                                        <span className="text-lg sm:text-2xl opacity-70"> - 49$</span>
+                                        {service.id === 'vibe-flux' ? `${animatedPrice}$` : `$${animatedPrice}`}
+                                        {service.id === 'vibe-flux' && <span className="text-lg sm:text-2xl opacity-70">/mois</span>}
                                     </p>
                                     <motion.div
                                         animate={{ opacity: [0, 1, 0] }}
