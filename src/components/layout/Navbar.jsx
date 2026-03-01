@@ -41,8 +41,8 @@ const Navbar = () => {
                         <nav className="flex items-center space-x-6">
                             <NavLink to="/" label="Accueil" />
                             <NavLink to="/pricing" label="Tarification" />
-                            <NavLink to="/#service" label="Services" />
-                            <NavLink to="/#faq" label="FAQ" />
+                            <NavLink to="/artist-services" label="Services" />
+                            <NavLink to="/faq" label="FAQ" />
                         </nav>
 
                         <Link to="/start" className="no-underline">
@@ -78,8 +78,8 @@ const Navbar = () => {
                                 <div className="flex flex-col space-y-3">
                                     <MobileNavLink to="/" label="Accueil" onClick={() => setIsOpen(false)} />
                                     <MobileNavLink to="/pricing" label="Tarification" onClick={() => setIsOpen(false)} />
-                                    <MobileNavLink to="/#service" label="Services" onClick={() => setIsOpen(false)} />
-                                    <MobileNavLink to="/#faq" label="FAQ" onClick={() => setIsOpen(false)} />
+                                    <MobileNavLink to="/artist-services" label="Services" onClick={() => setIsOpen(false)} />
+                                    <MobileNavLink to="/faq" label="FAQ" onClick={() => setIsOpen(false)} />
                                 </div>
                                 <Link to="/start" className="no-underline block" onClick={() => setIsOpen(false)}>
                                     <button className="w-full py-3 rounded-xl bg-white text-dark-bg font-bold text-sm uppercase tracking-wide shadow-md hover:shadow-white/20 transition-all">

@@ -8,6 +8,8 @@ import { GetStarted } from './features/get-started';
 import { Footer } from './components/layout';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import PricingPage from './pages/Pricing';
+import ArtistServices from './pages/ArtistServices';
+import FAQPage from './pages/FAQPage';
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/pricing" element={<PricingPage />} />
+              <Route path="/artist-services" element={<ArtistServices />} />
+              <Route path="/faq" element={<FAQPage />} />
               <Route path="/start" element={<GetStarted />} />
               <Route path="/service/:id" element={<ServiceDetail />} />
             </Routes>
