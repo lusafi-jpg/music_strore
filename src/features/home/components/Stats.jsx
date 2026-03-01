@@ -8,7 +8,7 @@ const Stats = () => {
         {
             icon: Users,
             label: "Artistes",
-            value: "1,200+",
+            value: "1200+",
             color: "brand-primary",
             ariaLabel: "Plus de 1200 artistes utilisent Vibrato"
         },
@@ -135,7 +135,7 @@ const StatItem = ({ icon, label, value, color, ariaLabel, delay }) => {
                     {/* Value */}
                     <div className="mb-4">
                         <p className="text-4xl md:text-5xl font-bold text-text-primary tabular-nums leading-none">
-                            {count.toLocaleString()}{value.includes('+') ? '+' : ''}{value.includes('M') ? 'M' : ''}
+                            {label === "Artistes" ? count : count.toLocaleString()}{value.includes('+') ? '+' : ''}{value.includes('M') ? 'M' : ''}
                         </p>
                     </div>
 
