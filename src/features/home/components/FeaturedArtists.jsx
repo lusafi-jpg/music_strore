@@ -272,7 +272,7 @@ const FeaturedArtists = () => {
                             <p className="text-white/80 text-sm">Tournage, enregistrement, événementiel...</p>
                         </div>
                         <a
-                            href="https://wa.me/243800000000?text=Bonjour%20Vibrato,%20je%20souhaite%20r%C3%A9server%20une%20session%20!"
+                            href="https://wa.me/243836332818?text=Bonjour%20Vibrato,%20je%20souhaite%20r%C3%A9server%20une%20session%20!"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-4 px-6 py-3 bg-white text-brand-primary font-bold rounded-xl hover:bg-white/90 transition-colors no-underline block"

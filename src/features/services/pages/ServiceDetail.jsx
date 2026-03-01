@@ -21,7 +21,7 @@ const ServiceDetail = () => {
         </div>
     );
 
-    const whatsappUrl = `https://wa.me/243854066780?text=${encodeURIComponent(service.whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/243836332818?text=${encodeURIComponent(service.whatsappMessage)}`;
 
     // Animated price counter
     useEffect(() => {

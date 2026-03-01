@@ -47,7 +47,7 @@ const Footer = () => {
                         <h4 className="text-sm font-black mb-6 sm:mb-8 tracking-[0.2em] text-white italic">Contact</h4>
                         <ul className="space-y-4 text-xs font-bold tracking-widest">
                             <li className="text-slate-400">Kinshasa, RDC</li>
-                            <li className="text-slate-400">+243 854 066 780</li>
+                            <li className="text-slate-400">+243 836 332 818</li>
                             <li className="text-slate-400">contact@vibrato.com</li>
                         </ul>
                     </div>

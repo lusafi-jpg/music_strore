@@ -63,7 +63,7 @@ const CTASection = () => {
                             </motion.button>
                         </Link>
 
-                        <a href="https://wa.me/243854066780" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto no-underline">
+                        <a href="https://wa.me/243836332818" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto no-underline">
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
